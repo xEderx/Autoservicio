@@ -1,2 +1,13 @@
 c:\users\eder\documents\visual studio 2015\Projects\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe.config
 C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.pdb
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.xml
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.vbprojResolveAssemblyReference.cache
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Form1.resources
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Resources.resources
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.vbproj.GenerateResource.Cache
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.exe
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.xml
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\MySql.Data.dll

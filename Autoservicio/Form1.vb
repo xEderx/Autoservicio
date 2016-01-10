@@ -1,3 +1,27 @@
-﻿Public Class Form1
+﻿Imports MySql.Data.MySqlClient
 
+Public Class Form1
+    Private Sub btnAcceder_Click(sender As Object, e As EventArgs) Handles btnAcceder.Click
+        If txtUsuario.Text = "" Or txtContrasenia.Text = "" Then
+            MsgBox("¡Los campos no pueden ir vacíos!")
+        Else
+            ccbd.conectarbd()
+            conbd.Open()
+            sql = "SELECT COUNT(*) FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "'"
+            mycommand = New MySqlCommand(sql)
+            mycommand.Connection = conbd
+            mycommand.ExecuteNonQuery()
+            If sql > 1 Then
+                MsgBox("Usuario correcto.")
+                conbd.Close()
+            Else
+                MsgBox("Usuario incorrecto.")
+                conbd.Close()
+            End If
+        End If
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
