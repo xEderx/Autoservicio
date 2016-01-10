@@ -15,4 +15,11 @@
     Private Sub AToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AToolStripMenuItem.Click
         altacliente.Show()
     End Sub
+
+    Private Sub UsuariToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariToolStripMenuItem.Click
+        Dim objUsuarios As New frmUsuarios
+        objUsuarios.MdiParent = Me
+        objUsuarios.FormBorderStyle = 0
+        objUsuarios.Show()
+    End Sub
 End Class
