@@ -16,7 +16,9 @@ Public Class Form1
                 MsgBox("Usuario incorrecto.")
                 conbd.Close()
             Else
+
                 Principal.Show()
+                Me.Visible = False
                 conbd.Close()
             End If
         End If
