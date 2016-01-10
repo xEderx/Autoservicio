@@ -7,7 +7,6 @@ Public Class Form1
         Else
             ccbd.conectarbd()
             conbd.Open()
-            'sql = "SELECT COUNT(*) FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "'"
             sql = "SELECT * FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "'"
             mycommand = New MySqlCommand(sql)
             mycommand.Connection = conbd
@@ -17,7 +16,9 @@ Public Class Form1
                 MsgBox("Usuario incorrecto.")
                 conbd.Close()
             Else
-                MsgBox("Usuario correcto.")
+
+                Principal.Show()
+                Me.Visible = False
                 conbd.Close()
             End If
         End If
