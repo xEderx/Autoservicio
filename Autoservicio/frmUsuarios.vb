@@ -4,13 +4,23 @@ Public Class frmUsuarios
     Private Sub frmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call cargadatos()
     End Sub
-
+    Public Sub BuscarUsuario()
+        Dim dt As New DataTable
+        Try
+            sql = "SELECT * FROM cat_usuarios WHERE Usuario LIKE '" & "%" & txtBuscar.Text & "%' OR Nombre LIKE '" & "%" & txtBuscar.Text & "%' OR Paterno LIKE '" & "%" & txtBuscar.Text & "%' OR MATERNO LIKE '" & "%" & txtBuscar.Text & "%'"
+            daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
+            daMySQL.Fill(dt)
+            Me.dtgUsuarios.DataSource = dt
+        Catch ex As Exception
+            MessageBox.Show("Error al obtener los registros.", "Error de datos.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
     Public Sub cargadatos()
         Dim dt As New DataTable
         ccbd.conectarbd()
         Try
             txtBuscar.Text = ""
-            sql = "SELECT * FROM cat_usuarios WHERE Activo = 1"
+            sql = "SELECT * FROM cat_usuarios"
             daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
             daMySQL.Fill(dt)
             Me.dtgUsuarios.DataSource = dt
@@ -34,15 +44,7 @@ Public Class frmUsuarios
     End Sub
 
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
-        Dim dt As New DataTable
-        Try
-            sql = "SELECT * FROM cat_usuarios WHERE Usuario LIKE '" & "%" & txtBuscar.Text & "%' OR Nombre LIKE '" & "%" & txtBuscar.Text & "%' OR Paterno LIKE '" & "%" & txtBuscar.Text & "%' OR MATERNO LIKE '" & "%" & txtBuscar.Text & "%'"
-            daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
-            daMySQL.Fill(dt)
-            Me.dtgUsuarios.DataSource = dt
-        Catch ex As Exception
-            MessageBox.Show("Error al obtener los registros.", "Error de datos.", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+        Call BuscarUsuario()
     End Sub
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -77,5 +79,11 @@ Public Class frmUsuarios
             conbd.Close()
             MessageBox.Show("No se pudo eliminar el usuario.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Sub
+
+    Private Sub txtBuscar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtBuscar.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Call BuscarUsuario()
+        End If
     End Sub
 End Class

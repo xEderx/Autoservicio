@@ -124,6 +124,7 @@ Partial Class frmNuevoUsuario
         '
         Me.txtNContrasenia.Location = New System.Drawing.Point(118, 151)
         Me.txtNContrasenia.Name = "txtNContrasenia"
+        Me.txtNContrasenia.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtNContrasenia.Size = New System.Drawing.Size(140, 20)
         Me.txtNContrasenia.TabIndex = 10
         '
