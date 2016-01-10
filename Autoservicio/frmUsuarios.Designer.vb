@@ -29,6 +29,7 @@ Partial Class frmUsuarios
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnHabilitar = New System.Windows.Forms.Button()
         CType(Me.dtgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -70,7 +71,7 @@ Partial Class frmUsuarios
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(383, 245)
+        Me.btnNuevo.Location = New System.Drawing.Point(279, 245)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
         Me.btnNuevo.TabIndex = 4
@@ -79,12 +80,21 @@ Partial Class frmUsuarios
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(476, 245)
+        Me.btnEliminar.Location = New System.Drawing.Point(380, 245)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 5
-        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.Text = "Deshabilitar"
         Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'btnHabilitar
+        '
+        Me.btnHabilitar.Location = New System.Drawing.Point(477, 245)
+        Me.btnHabilitar.Name = "btnHabilitar"
+        Me.btnHabilitar.Size = New System.Drawing.Size(75, 23)
+        Me.btnHabilitar.TabIndex = 6
+        Me.btnHabilitar.Text = "Habilitar"
+        Me.btnHabilitar.UseVisualStyleBackColor = True
         '
         'frmUsuarios
         '
@@ -92,6 +102,7 @@ Partial Class frmUsuarios
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(564, 286)
+        Me.Controls.Add(Me.btnHabilitar)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.btnBuscar)
@@ -116,4 +127,5 @@ Partial Class frmUsuarios
     Friend WithEvents btnBuscar As Button
     Friend WithEvents btnNuevo As Button
     Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnHabilitar As Button
 End Class

@@ -69,7 +69,7 @@ Public Class frmUsuarios
             mycommand.Connection = conbd
             mycommand.Transaction = tran
             mycommand.ExecuteNonQuery()
-            MessageBox.Show("El usuario fue eliminado correctamente.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("El usuario fue deshabilitado.", "Deshabilitación", MessageBoxButtons.OK, MessageBoxIcon.Information)
             tran.Commit()
             conbd.Close()
             Call cargadatos()
@@ -77,7 +77,7 @@ Public Class frmUsuarios
         Catch ex As Exception
             tran.Rollback()
             conbd.Close()
-            MessageBox.Show("No se pudo eliminar el usuario.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("No se pudo deshabilitar el usuario.", "Deshabilitación", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
@@ -85,5 +85,29 @@ Public Class frmUsuarios
         If e.KeyChar = ChrW(Keys.Enter) Then
             Call BuscarUsuario()
         End If
+    End Sub
+
+    Private Sub btnHabilitar_Click(sender As Object, e As EventArgs) Handles btnHabilitar.Click
+        Dim tran As MySqlTransaction
+        Try
+            ccbd.conectarbd()
+            conbd.Open()
+            tran = conbd.BeginTransaction
+            'sql = "DELETE FROM cat_usuarios WHERE IdUsuario = " & vid
+            sql = "UPDATE cat_usuarios SET Activo = True WHERE IdUsuario = " & vid
+            mycommand = New MySqlCommand(sql)
+            mycommand.Connection = conbd
+            mycommand.Transaction = tran
+            mycommand.ExecuteNonQuery()
+            MessageBox.Show("El usuario fue habilitó nuevamente.", "Habilitación", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            tran.Commit()
+            conbd.Close()
+            Call cargadatos()
+
+        Catch ex As Exception
+            tran.Rollback()
+            conbd.Close()
+            MessageBox.Show("No se pudo habilitar el usuario.", "Habilitación", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class
