@@ -61,7 +61,8 @@ Public Class frmUsuarios
             ccbd.conectarbd()
             conbd.Open()
             tran = conbd.BeginTransaction
-            sql = "DELETE FROM cat_usuarios WHERE IdUsuario = " & vid
+            'sql = "DELETE FROM cat_usuarios WHERE IdUsuario = " & vid
+            sql = "UPDATE cat_usuarios SET Activo = False WHERE IdUsuario = " & vid
             mycommand = New MySqlCommand(sql)
             mycommand.Connection = conbd
             mycommand.Transaction = tran
