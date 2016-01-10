@@ -28,7 +28,7 @@ Partial Class frmNuevoUsuario
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.chkAdmin = New System.Windows.Forms.CheckBox()
         Me.txtNUsuario = New System.Windows.Forms.TextBox()
         Me.txtNNombre = New System.Windows.Forms.TextBox()
         Me.txtNPaterno = New System.Windows.Forms.TextBox()
@@ -82,15 +82,15 @@ Partial Class frmNuevoUsuario
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Contraseña:"
         '
-        'CheckBox1
+        'chkAdmin
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 201)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(89, 17)
-        Me.CheckBox1.TabIndex = 5
-        Me.CheckBox1.Text = "Administrador"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkAdmin.AutoSize = True
+        Me.chkAdmin.Location = New System.Drawing.Point(12, 201)
+        Me.chkAdmin.Name = "chkAdmin"
+        Me.chkAdmin.Size = New System.Drawing.Size(89, 17)
+        Me.chkAdmin.TabIndex = 5
+        Me.chkAdmin.Text = "Administrador"
+        Me.chkAdmin.UseVisualStyleBackColor = True
         '
         'txtNUsuario
         '
@@ -148,7 +148,7 @@ Partial Class frmNuevoUsuario
         Me.Controls.Add(Me.txtNPaterno)
         Me.Controls.Add(Me.txtNNombre)
         Me.Controls.Add(Me.txtNUsuario)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.chkAdmin)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -168,7 +168,7 @@ Partial Class frmNuevoUsuario
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents chkAdmin As CheckBox
     Friend WithEvents txtNUsuario As TextBox
     Friend WithEvents txtNNombre As TextBox
     Friend WithEvents txtNPaterno As TextBox

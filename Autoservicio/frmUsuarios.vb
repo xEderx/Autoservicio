@@ -10,7 +10,7 @@ Public Class frmUsuarios
         ccbd.conectarbd()
         Try
             txtBuscar.Text = ""
-            sql = "SELECT * FROM cat_usuarios"
+            sql = "SELECT * FROM cat_usuarios WHERE Activo = 1"
             daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
             daMySQL.Fill(dt)
             Me.dtgUsuarios.DataSource = dt
@@ -47,5 +47,34 @@ Public Class frmUsuarios
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         frmNuevoUsuario.ShowDialog()
+        Call cargadatos()
+    End Sub
+
+    Private Sub dtgUsuarios_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgUsuarios.CellClick
+        Dim ind As Integer = dtgUsuarios.CurrentRow.Index
+        vid = Convert.ToInt32(dtgUsuarios.Item("IdUsuario", ind).Value)
+    End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        Dim tran As MySqlTransaction
+        Try
+            ccbd.conectarbd()
+            conbd.Open()
+            tran = conbd.BeginTransaction
+            sql = "DELETE FROM cat_usuarios WHERE IdUsuario = " & vid
+            mycommand = New MySqlCommand(sql)
+            mycommand.Connection = conbd
+            mycommand.Transaction = tran
+            mycommand.ExecuteNonQuery()
+            MessageBox.Show("El usuario fue eliminado correctamente.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            tran.Commit()
+            conbd.Close()
+            Call cargadatos()
+
+        Catch ex As Exception
+            tran.Rollback()
+            conbd.Close()
+            MessageBox.Show("No se pudo eliminar el usuario.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class
