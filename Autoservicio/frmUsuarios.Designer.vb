@@ -58,14 +58,12 @@ Partial Class frmUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(590, 324)
-        Me.ControlBox = False
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "frmUsuarios"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

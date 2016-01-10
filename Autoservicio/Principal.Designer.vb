@@ -144,7 +144,6 @@ Partial Class Principal
         Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(653, 410)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.IsMdiContainer = True
         Me.Name = "Principal"
         Me.Text = "Form2"
         Me.MenuStrip1.ResumeLayout(False)
