@@ -93,6 +93,12 @@
     <Compile Include="altacliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmNuevoUsuario.Designer.vb">
+      <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmUsuarios.Designer.vb">
       <DependentUpon>frmUsuarios.vb</DependentUpon>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoUsuario.resx">
+      <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.vb</DependentUpon>

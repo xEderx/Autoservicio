@@ -36,7 +36,6 @@ Public Class frmUsuarios
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
         Dim dt As New DataTable
         Try
-            'sql = "SELECT * FROM cat_usuarios WHERE Usuario LIKE '" & "%" & txtBuscar.Text & "%'"
             sql = "SELECT * FROM cat_usuarios WHERE Usuario LIKE '" & "%" & txtBuscar.Text & "%' OR Nombre LIKE '" & "%" & txtBuscar.Text & "%' OR Paterno LIKE '" & "%" & txtBuscar.Text & "%' OR MATERNO LIKE '" & "%" & txtBuscar.Text & "%'"
             daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
             daMySQL.Fill(dt)
@@ -44,5 +43,9 @@ Public Class frmUsuarios
         Catch ex As Exception
             MessageBox.Show("Error al obtener los registros.", "Error de datos.", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Sub
+
+    Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
+        frmNuevoUsuario.ShowDialog()
     End Sub
 End Class

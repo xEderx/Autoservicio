@@ -42,3 +42,4 @@ C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.altacliente.r
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.altacliente.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmUsuarios.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevoUsuario.resources
