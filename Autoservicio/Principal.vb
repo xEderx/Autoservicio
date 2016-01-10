@@ -12,5 +12,7 @@
         Clientes.Show()
     End Sub
 
-
+    Private Sub AToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AToolStripMenuItem.Click
+        altacliente.Show()
+    End Sub
 End Class

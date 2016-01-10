@@ -26,6 +26,7 @@ Partial Class Clientes
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnbuscar = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Btnnuevo = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,11 +63,21 @@ Partial Class Clientes
         Me.DataGridView1.Size = New System.Drawing.Size(606, 246)
         Me.DataGridView1.TabIndex = 4
         '
+        'Btnnuevo
+        '
+        Me.Btnnuevo.Location = New System.Drawing.Point(556, 71)
+        Me.Btnnuevo.Name = "Btnnuevo"
+        Me.Btnnuevo.Size = New System.Drawing.Size(75, 23)
+        Me.Btnnuevo.TabIndex = 8
+        Me.Btnnuevo.Text = "Nuevo"
+        Me.Btnnuevo.UseVisualStyleBackColor = True
+        '
         'Clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(674, 418)
+        Me.Controls.Add(Me.Btnnuevo)
         Me.Controls.Add(Me.Txtrfc)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnbuscar)
@@ -83,4 +94,5 @@ Partial Class Clientes
     Friend WithEvents Label1 As Label
     Friend WithEvents btnbuscar As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Btnnuevo As Button
 End Class

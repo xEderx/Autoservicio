@@ -1,4 +1,6 @@
-﻿Public Class Clientes
+﻿Imports System.Data.OleDb
+Imports MySql.Data.MySqlClient
+Public Class Clientes
     Private Sub Clientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call cargadatos()
     End Sub
@@ -25,5 +27,9 @@
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub Btnnuevo_Click(sender As Object, e As EventArgs) Handles Btnnuevo.Click
+        altacliente.Show()
     End Sub
 End Class

@@ -87,6 +87,12 @@
     <Compile Include="Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="altacliente.Designer.vb">
+      <DependentUpon>altacliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="altacliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Principal.Designer.vb">
       <DependentUpon>Principal.vb</DependentUpon>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="altacliente.resx">
+      <DependentUpon>altacliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
