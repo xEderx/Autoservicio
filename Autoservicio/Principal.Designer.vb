@@ -102,7 +102,7 @@ Partial Class Principal
         'ListadoToolStripMenuItem
         '
         Me.ListadoToolStripMenuItem.Name = "ListadoToolStripMenuItem"
-        Me.ListadoToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.ListadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListadoToolStripMenuItem.Text = "Listado"
         '
         'InventariosToolStripMenuItem
