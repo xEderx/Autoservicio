@@ -39,3 +39,5 @@ C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.xml
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.pdb
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.altacliente.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.altacliente.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
