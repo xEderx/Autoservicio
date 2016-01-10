@@ -3,7 +3,7 @@
 Public Class Form1
     Private Sub btnAcceder_Click(sender As Object, e As EventArgs) Handles btnAcceder.Click
         If txtUsuario.Text = "" Or txtContrasenia.Text = "" Then
-            MsgBox("¡Los campos no pueden ir vacíos!")
+            MessageBox.Show("¡Tiene que poner un usuario y/o contraseña!", "Campos vacíos.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
             ccbd.conectarbd()
             conbd.Open()
@@ -13,10 +13,9 @@ Public Class Form1
             Dim mydata As MySqlDataReader
             mydata = mycommand.ExecuteReader()
             If mydata.HasRows = 0 Then
-                MsgBox("Usuario incorrecto.")
+                MessageBox.Show("El usuario o contraseña no son correctos.", "Error de acceso.", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 conbd.Close()
             Else
-
                 Principal.Show()
                 Me.Visible = False
                 conbd.Close()
