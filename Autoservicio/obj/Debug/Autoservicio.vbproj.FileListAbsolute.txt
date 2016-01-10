@@ -23,3 +23,4 @@ C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.vbpr
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.exe
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.xml
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\bin\Debug\Autoservicio.exe.config
