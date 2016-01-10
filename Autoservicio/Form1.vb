@@ -14,7 +14,7 @@ Public Class Form1
             Dim mydata As MySqlDataReader
             mydata = mycommand.ExecuteReader()
             If mydata.HasRows = 0 Then
-                MsgBox("Usuario incorrecto.")
+                MsgBox("Usuario incorrectom.")
                 conbd.Close()
             Else
                 MsgBox("Usuario correcto.")
