@@ -38,6 +38,7 @@ Partial Class Principal
         Me.SaldosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DatosDeLaEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,7 +53,7 @@ Partial Class Principal
         '
         'HolaToolStripMenuItem
         '
-        Me.HolaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSesionToolStripMenuItem, Me.SalirDeProgramaToolStripMenuItem})
+        Me.HolaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarSesionToolStripMenuItem, Me.SalirDeProgramaToolStripMenuItem, Me.DatosDeLaEmpresaToolStripMenuItem})
         Me.HolaToolStripMenuItem.Name = "HolaToolStripMenuItem"
         Me.HolaToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.HolaToolStripMenuItem.Text = "Archivo"
@@ -60,13 +61,13 @@ Partial Class Principal
         'CerrarSesionToolStripMenuItem
         '
         Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CerrarSesionToolStripMenuItem.Text = "Cerrar sesion"
         '
         'SalirDeProgramaToolStripMenuItem
         '
         Me.SalirDeProgramaToolStripMenuItem.Name = "SalirDeProgramaToolStripMenuItem"
-        Me.SalirDeProgramaToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
+        Me.SalirDeProgramaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SalirDeProgramaToolStripMenuItem.Text = "Salir de programa"
         '
         'ProvedoresToolStripMenuItem
@@ -117,19 +118,19 @@ Partial Class Principal
         'ComprasToolStripMenuItem
         '
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ComprasToolStripMenuItem.Text = "Compras"
         '
         'VentasToolStripMenuItem
         '
         Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.VentasToolStripMenuItem.Text = "Ventas"
         '
         'SaldosToolStripMenuItem
         '
         Me.SaldosToolStripMenuItem.Name = "SaldosToolStripMenuItem"
-        Me.SaldosToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.SaldosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaldosToolStripMenuItem.Text = "Saldos"
         '
         'UsuariToolStripMenuItem
@@ -142,8 +143,14 @@ Partial Class Principal
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
+        '
+        'DatosDeLaEmpresaToolStripMenuItem
+        '
+        Me.DatosDeLaEmpresaToolStripMenuItem.Name = "DatosDeLaEmpresaToolStripMenuItem"
+        Me.DatosDeLaEmpresaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DatosDeLaEmpresaToolStripMenuItem.Text = "Datos de la empresa"
         '
         'Principal
         '
@@ -177,4 +184,5 @@ Partial Class Principal
     Friend WithEvents SaldosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DatosDeLaEmpresaToolStripMenuItem As ToolStripMenuItem
 End Class

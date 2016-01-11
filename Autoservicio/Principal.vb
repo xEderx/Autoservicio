@@ -35,4 +35,8 @@
         'objUsuarios.Show()
         frmUsuarios.Show()
     End Sub
+
+    Private Sub DatosDeLaEmpresaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DatosDeLaEmpresaToolStripMenuItem.Click
+        datosempresa.Show()
+    End Sub
 End Class
