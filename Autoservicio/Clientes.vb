@@ -32,4 +32,20 @@ Public Class Clientes
     Private Sub Btnnuevo_Click(sender As Object, e As EventArgs) Handles Btnnuevo.Click
         altacliente.Show()
     End Sub
+
+    Private Sub btnbuscar_Click(sender As Object, e As EventArgs) Handles btnbuscar.Click
+        Dim dt As New DataTable
+        Try
+            sql = "select * from cliente where cod_cli like '" & "%" & Txtrfc.Text & "%'"
+
+            daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
+            daMySQL.Fill(dt)
+            Me.DataGridView1.DataSource = dt
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub Txtrfc_TextChanged(sender As Object, e As EventArgs) Handles Txtrfc.TextChanged
+
+    End Sub
 End Class
