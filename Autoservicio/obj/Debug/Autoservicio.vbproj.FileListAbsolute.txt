@@ -47,3 +47,4 @@ C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmM
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmModificaUsuario.resources
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevoUsuario.resources
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmUsuarios.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.datosempresa.resources
