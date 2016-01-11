@@ -5,6 +5,8 @@ Imports MySql.Data.MySqlClient
 Module variables
     Public sql As String
     Public vid As Integer
+    Public vid_usuario As Integer
+    Public vactivo_usuario As Boolean
     Public cmdtbl As New OleDbCommand
     Public datbl As New OleDbDataAdapter
     Public rdrtbl As OleDbDataReader

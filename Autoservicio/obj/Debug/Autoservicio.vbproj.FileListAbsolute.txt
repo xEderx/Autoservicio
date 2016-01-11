@@ -43,3 +43,4 @@ C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.alta
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmUsuarios.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevoUsuario.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmModificaUsuario.resources

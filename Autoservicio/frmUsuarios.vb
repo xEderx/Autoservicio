@@ -110,4 +110,18 @@ Public Class frmUsuarios
             MessageBox.Show("No se pudo habilitar el usuario.", "Habilitación", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+    Private Sub dtgUsuarios_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgUsuarios.CellDoubleClick
+        Dim objModificaUsuario As New frmModificaUsuario
+        Dim ind As Integer = dtgUsuarios.CurrentRow.Index
+        vid_usuario = Convert.ToInt32(dtgUsuarios.Item("IdUsuario", ind).Value)
+        objModificaUsuario.txtMUsuario.Text = Convert.ToString(dtgUsuarios.Item("Usuario", ind).Value)
+        objModificaUsuario.txtMNombre.Text = Convert.ToString(dtgUsuarios.Item("Nombre", ind).Value)
+        objModificaUsuario.txtMPaterno.Text = Convert.ToString(dtgUsuarios.Item("Paterno", ind).Value)
+        objModificaUsuario.txtMMaterno.Text = Convert.ToString(dtgUsuarios.Item("Materno", ind).Value)
+        objModificaUsuario.txtMContrasenia.Text = Convert.ToString(dtgUsuarios.Item("Contrasenia", ind).Value)
+        objModificaUsuario.chkMAdmin.Checked = Convert.ToBoolean(dtgUsuarios.Item("Administrador", ind).Value)
+        objModificaUsuario.ShowDialog()
+        Call cargadatos()
+    End Sub
 End Class
