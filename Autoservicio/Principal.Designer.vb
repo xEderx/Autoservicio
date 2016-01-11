@@ -37,6 +37,7 @@ Partial Class Principal
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaldosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -133,9 +134,16 @@ Partial Class Principal
         '
         'UsuariToolStripMenuItem
         '
+        Me.UsuariToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem})
         Me.UsuariToolStripMenuItem.Name = "UsuariToolStripMenuItem"
         Me.UsuariToolStripMenuItem.Size = New System.Drawing.Size(100, 20)
         Me.UsuariToolStripMenuItem.Text = "Administración"
+        '
+        'UsuariosToolStripMenuItem
+        '
+        Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'Principal
         '
@@ -168,4 +176,5 @@ Partial Class Principal
     Friend WithEvents VentasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaldosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
 End Class

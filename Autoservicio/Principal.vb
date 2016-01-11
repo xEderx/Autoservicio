@@ -17,11 +17,7 @@
     End Sub
 
     Private Sub UsuariToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariToolStripMenuItem.Click
-        'Dim objUsuarios As New frmUsuarios
-        'objUsuarios.MdiParent = Me
-        'objUsuarios.FormBorderStyle = 0
-        'objUsuarios.Show()
-        frmUsuarios.Show()
+
     End Sub
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -30,5 +26,13 @@
 
     Private Sub Principal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Form1.Close()
+    End Sub
+
+    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
+        'Dim objUsuarios As New frmUsuarios
+        'objUsuarios.MdiParent = Me
+        'objUsuarios.FormBorderStyle = 0
+        'objUsuarios.Show()
+        frmUsuarios.Show()
     End Sub
 End Class
