@@ -17,11 +17,11 @@ Public Class altacliente
         ' MsgBox("registro agregado")
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -42,7 +42,7 @@ Public Class altacliente
                 ccbd.conectarbd()
                 conbd.Open()
                 tran = conbd.BeginTransaction
-                sql = "INSERT INTO cat_usuarios (cod_cli, nom_cli, dni_cli, tel_cli, email_cli) VALUES ('" & txtrfc.Text & "', '" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & ")"
+                sql = "INSERT INTO cliente(cod_cli,nom_cli,dni_cli,edo_cli,ciu_cli,cp_cli,tel_cli,email_cli) VALUES ('" & txtrfc.Text & "', '" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txtestado.Text & "', '" & txtciudad.Text & "', '" & txtcp.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & "')"
                 mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
                 mycommand.Transaction = tran
