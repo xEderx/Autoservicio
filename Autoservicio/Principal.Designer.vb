@@ -134,8 +134,8 @@ Partial Class Principal
         'UsuariToolStripMenuItem
         '
         Me.UsuariToolStripMenuItem.Name = "UsuariToolStripMenuItem"
-        Me.UsuariToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
-        Me.UsuariToolStripMenuItem.Text = "Usuarios"
+        Me.UsuariToolStripMenuItem.Size = New System.Drawing.Size(100, 20)
+        Me.UsuariToolStripMenuItem.Text = "Administración"
         '
         'Principal
         '
