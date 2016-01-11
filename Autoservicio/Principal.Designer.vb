@@ -26,6 +26,7 @@ Partial Class Principal
         Me.HolaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirDeProgramaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DatosDeLaEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProvedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,7 +39,6 @@ Partial Class Principal
         Me.SaldosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DatosDeLaEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,6 +70,12 @@ Partial Class Principal
         Me.SalirDeProgramaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SalirDeProgramaToolStripMenuItem.Text = "Salir de programa"
         '
+        'DatosDeLaEmpresaToolStripMenuItem
+        '
+        Me.DatosDeLaEmpresaToolStripMenuItem.Name = "DatosDeLaEmpresaToolStripMenuItem"
+        Me.DatosDeLaEmpresaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DatosDeLaEmpresaToolStripMenuItem.Text = "Datos de la empresa"
+        '
         'ProvedoresToolStripMenuItem
         '
         Me.ProvedoresToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaToolStripMenuItem, Me.ModificacionToolStripMenuItem})
@@ -80,13 +86,13 @@ Partial Class Principal
         'AltaToolStripMenuItem
         '
         Me.AltaToolStripMenuItem.Name = "AltaToolStripMenuItem"
-        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.AltaToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.AltaToolStripMenuItem.Text = "Alta"
         '
         'ModificacionToolStripMenuItem
         '
         Me.ModificacionToolStripMenuItem.Name = "ModificacionToolStripMenuItem"
-        Me.ModificacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModificacionToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.ModificacionToolStripMenuItem.Text = "Listado"
         '
         'ClientesToolStripMenuItem
@@ -118,19 +124,19 @@ Partial Class Principal
         'ComprasToolStripMenuItem
         '
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.ComprasToolStripMenuItem.Text = "Compras"
         '
         'VentasToolStripMenuItem
         '
         Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.VentasToolStripMenuItem.Text = "Ventas"
         '
         'SaldosToolStripMenuItem
         '
         Me.SaldosToolStripMenuItem.Name = "SaldosToolStripMenuItem"
-        Me.SaldosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaldosToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.SaldosToolStripMenuItem.Text = "Saldos"
         '
         'UsuariToolStripMenuItem
@@ -143,14 +149,8 @@ Partial Class Principal
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
-        '
-        'DatosDeLaEmpresaToolStripMenuItem
-        '
-        Me.DatosDeLaEmpresaToolStripMenuItem.Name = "DatosDeLaEmpresaToolStripMenuItem"
-        Me.DatosDeLaEmpresaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.DatosDeLaEmpresaToolStripMenuItem.Text = "Datos de la empresa"
         '
         'Principal
         '
@@ -160,7 +160,7 @@ Partial Class Principal
         Me.ClientSize = New System.Drawing.Size(653, 410)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Principal"
-        Me.Text = "Form2"
+        Me.Text = "Autoservicio"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)

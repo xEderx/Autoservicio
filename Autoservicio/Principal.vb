@@ -1,4 +1,11 @@
 ﻿Public Class Principal
+    Public Sub Sesion()
+        If vsesion = 1 Then
+            UsuariToolStripMenuItem.Enabled = True
+        Else
+            UsuariToolStripMenuItem.Enabled = False
+        End If
+    End Sub
     Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
         Me.Hide()
         Form1.Show()
@@ -21,7 +28,7 @@
     End Sub
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Call Sesion()
     End Sub
 
     Private Sub Principal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -46,5 +53,9 @@
 
     Private Sub ModificacionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificacionToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub Principal_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
+        Call Sesion()
     End Sub
 End Class
