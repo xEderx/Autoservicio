@@ -39,4 +39,12 @@
     Private Sub DatosDeLaEmpresaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DatosDeLaEmpresaToolStripMenuItem.Click
         datosempresa.Show()
     End Sub
+
+    Private Sub HolaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HolaToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub ModificacionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificacionToolStripMenuItem.Click
+
+    End Sub
 End Class
