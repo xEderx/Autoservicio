@@ -16,6 +16,13 @@ Public Class Form1
                 MessageBox.Show("El usuario o contraseña no son correctos.", "Error de acceso.", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 conbd.Close()
             Else
+                sql = "SELECT * FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "' AND Activo = True AND Administrador = True"
+                mycommand = New MySqlCommand(sql)
+                If mydata.HasRows = 0 Then
+                    MsgBox("El usuario no es administrador.")
+                Else
+                    MsgBox("El usuario es administrador.")
+                End If
                 Principal.Show()
                 Me.Visible = False
                 conbd.Close()
