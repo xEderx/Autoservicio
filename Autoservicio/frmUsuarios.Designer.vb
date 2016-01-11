@@ -80,7 +80,7 @@ Partial Class frmUsuarios
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(380, 245)
+        Me.btnEliminar.Location = New System.Drawing.Point(378, 245)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 5
