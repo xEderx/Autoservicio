@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
@@ -66,19 +67,19 @@ Partial Class Form1
         '
         'btnAcceder
         '
-        Me.btnAcceder.Location = New System.Drawing.Point(105, 147)
+        Me.btnAcceder.BackgroundImage = CType(resources.GetObject("btnAcceder.BackgroundImage"), System.Drawing.Image)
+        Me.btnAcceder.Location = New System.Drawing.Point(105, 142)
         Me.btnAcceder.Name = "btnAcceder"
-        Me.btnAcceder.Size = New System.Drawing.Size(75, 23)
+        Me.btnAcceder.Size = New System.Drawing.Size(75, 46)
         Me.btnAcceder.TabIndex = 4
-        Me.btnAcceder.Text = "Acceder"
         Me.btnAcceder.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(284, 206)
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.ClientSize = New System.Drawing.Size(281, 201)
         Me.Controls.Add(Me.btnAcceder)
         Me.Controls.Add(Me.txtContrasenia)
         Me.Controls.Add(Me.txtUsuario)

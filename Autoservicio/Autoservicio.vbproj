@@ -94,12 +94,6 @@
     <Compile Include="altacliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="datosempresa.Designer.vb">
-      <DependentUpon>datosempresa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="datosempresa.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmModificaUsuario.Designer.vb">
       <DependentUpon>frmModificaUsuario.vb</DependentUpon>
     </Compile>
@@ -148,9 +142,6 @@
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="datosempresa.resx">
-      <DependentUpon>datosempresa.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +179,7 @@
   <ItemGroup>
     <Content Include="Imagenes\busqueda.jpg" />
     <Content Include="Imagenes\guardar.jpg" />
+    <Content Include="Imagenes\usb.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
