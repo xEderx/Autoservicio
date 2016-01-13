@@ -14,7 +14,7 @@ Public Class frmNuevoUsuario
                 ccbd.conectarbd()
                 conbd.Open()
                 tran = conbd.BeginTransaction
-                sql = "INSERT INTO cat_usuarios (Usuario, Nombre, Paterno, Materno, Contrasenia, Activo, Administrador) VALUES ('" & txtNUsuario.Text & "', '" & txtNNombre.Text & "', '" & txtNPaterno.Text & "', '" & txtNMaterno.Text & "', '" & txtNContrasenia.Text & "', True, " & chkAdmin.Checked & ")"
+                sql = "INSERT INTO cat_usuarios (Usuario, Nombre, Paterno, Materno, Contrasenia, Administrador) VALUES ('" & txtNUsuario.Text & "', '" & txtNNombre.Text & "', '" & txtNPaterno.Text & "', '" & txtNMaterno.Text & "', '" & txtNContrasenia.Text & "', " & chkAdmin.Checked & ")"
                 mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
                 mycommand.Transaction = tran

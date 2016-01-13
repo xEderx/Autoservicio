@@ -10,7 +10,7 @@ Public Class frmModificaUsuario
                 ccbd.conectarbd()
                 conbd.Open()
                 tran = conbd.BeginTransaction
-                sql = "UPDATE cat_usuarios SET Usuario = '" & txtMUsuario.Text & "', Nombre = '" & txtMNombre.Text & "', Paterno = '" & txtMPaterno.Text & "', Materno = '" & txtMPaterno.Text & "', Contrasenia = '" & txtMContrasenia.Text & "', Activo = True, Administrador = " & chkMAdmin.Checked & " WHERE IdUsuario = " & vid_usuario
+                sql = "UPDATE cat_usuarios SET Usuario = '" & txtMUsuario.Text & "', Nombre = '" & txtMNombre.Text & "', Paterno = '" & txtMPaterno.Text & "', Materno = '" & txtMPaterno.Text & "', Contrasenia = '" & txtMContrasenia.Text & "', Administrador = " & chkMAdmin.Checked & " WHERE IdUsuario = " & vid_usuario
                 mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
                 mycommand.Transaction = tran
