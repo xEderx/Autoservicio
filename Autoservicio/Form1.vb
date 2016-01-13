@@ -7,7 +7,7 @@ Public Class Form1
         Else
             ccbd.conectarbd()
             conbd.Open()
-            sql = "SELECT * FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "' AND Activo = True"            
+            sql = "SELECT * FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "'"
             mycommand = New MySqlCommand(sql)
             mycommand.Connection = conbd
             Dim mydata As MySqlDataReader
@@ -21,7 +21,7 @@ Public Class Form1
                 'Almacenamos en una variable de sesión el valor de la columna que deseamos. En este caso es la columna 7, son 8 pero hay que recordar
                 'que se cuenta a partir de 0, así que por eso queda con el número 7. Con esto, ese valor queda almacemado en la variable.
                 'Si fuera un textbox sería el mismo procedimiento.
-                vsesion = mydata(7)
+                vsesion = mydata(6)
                 Principal.Show()
                 Me.Visible = False
                 conbd.Close()
