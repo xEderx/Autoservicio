@@ -19,4 +19,5 @@ Module variables
     Public conMySQL As New MySqlConnection
     Public daMySQL As New MySqlDataAdapter
     Public rdMySQL As MySqlDataReader
+    Public ds As DataSet
 End Module

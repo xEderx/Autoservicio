@@ -105,10 +105,22 @@
     <Compile Include="frmModificaUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmNuevaSucursal.Designer.vb">
+      <DependentUpon>frmNuevaSucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaSucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNuevoUsuario.Designer.vb">
       <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
     </Compile>
     <Compile Include="frmNuevoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSucursales.Designer.vb">
+      <DependentUpon>frmSucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSucursales.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUsuarios.Designer.vb">
@@ -156,8 +168,14 @@
     <EmbeddedResource Include="frmModificaUsuario.resx">
       <DependentUpon>frmModificaUsuario.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaSucursal.resx">
+      <DependentUpon>frmNuevaSucursal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoUsuario.resx">
       <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSucursales.resx">
+      <DependentUpon>frmSucursales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.vb</DependentUpon>

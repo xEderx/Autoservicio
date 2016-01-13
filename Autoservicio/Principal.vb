@@ -51,11 +51,27 @@
 
     End Sub
 
-    Private Sub ModificacionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificacionToolStripMenuItem.Click
+    Private Sub ModificacionToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub Principal_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
         Call Sesion()
+    End Sub
+
+    Private Sub AltaToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ProvedoresToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub InventariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InventariosToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub SucursalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SucursalesToolStripMenuItem.Click
+        frmSucursales.ShowDialog()
     End Sub
 End Class
