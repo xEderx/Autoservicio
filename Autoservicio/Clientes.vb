@@ -18,13 +18,14 @@ Public Class Clientes
             DataGridView1.AutoResizeColumns()
 
             DataGridView1.Columns(0).HeaderText = "RFC"
-            DataGridView1.Columns(1).HeaderText = "Nombre"
-            DataGridView1.Columns(2).HeaderText = "Domicilio"
-            DataGridView1.Columns(3).HeaderText = "Estado"
-            DataGridView1.Columns(4).HeaderText = "Ciudad"
-            DataGridView1.Columns(5).HeaderText = "Telefono"
-            DataGridView1.Columns(6).HeaderText = "Carpeta"
-            DataGridView1.Columns(7).HeaderText = "Correo"
+            DataGridView1.Columns(1).HeaderText = "TIPO"
+            DataGridView1.Columns(2).HeaderText = "Nombre"
+            DataGridView1.Columns(3).HeaderText = "Domicilio"
+            DataGridView1.Columns(4).HeaderText = "Estado"
+            DataGridView1.Columns(5).HeaderText = "Ciudad"
+            DataGridView1.Columns(6).HeaderText = "Telefono"
+            DataGridView1.Columns(7).HeaderText = "Carpeta"
+            DataGridView1.Columns(8).HeaderText = "Correo"
 
         Catch ex As Exception
 

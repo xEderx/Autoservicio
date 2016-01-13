@@ -6,6 +6,7 @@ Public Class Form1
             MessageBox.Show("¡Tiene que poner un usuario y/o contraseña!", "Campos vacíos.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
             ccbd.conectarbd()
+
             conbd.Open()
             sql = "SELECT * FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "'"
             mycommand = New MySqlCommand(sql)

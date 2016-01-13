@@ -34,7 +34,7 @@ Public Class altacliente
     End Sub
 
     Public Sub Nuevocleinte()
-        If txtrfc.Text = "" Or txtnombre.Text = "" Or txtdomicilio.Text = "" Or txttelefono.Text = "" Or txtcorreo.Text = "" Then
+        If txttipo.Text = "" Or txtrfc.Text = "" Or txtnombre.Text = "" Or txtdomicilio.Text = "" Or txttelefono.Text = "" Or txtcorreo.Text = "" Then
             MessageBox.Show("¡Hay algunos campos vacios!", "Inserción.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
             Dim tran As MySqlTransaction
@@ -42,7 +42,7 @@ Public Class altacliente
                 ccbd.conectarbd()
                 conbd.Open()
                 tran = conbd.BeginTransaction
-                sql = "INSERT INTO cliente(cod_cli,nom_cli,dni_cli,edo_cli,ciu_cli,cp_cli,tel_cli,email_cli) VALUES ('" & txtrfc.Text & "', '" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txtestado.Text & "', '" & txtciudad.Text & "', '" & txtcp.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & "')"
+                sql = "INSERT INTO cliente(cod_cli,t_cli,nom_cli,dni_cli,edo_cli,ciu_cli,cp_cli,tel_cli,email_cli) VALUES ('" & txtrfc.Text & "', '" & txttipo.Text & "','" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txtestado.Text & "', '" & txtciudad.Text & "', '" & txtcp.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & "')"
                 mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
                 mycommand.Transaction = tran
@@ -58,5 +58,9 @@ Public Class altacliente
                 MessageBox.Show("No se pudo agregar el usuario.", "Inserción", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End If
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
     End Sub
 End Class
