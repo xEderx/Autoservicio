@@ -60,7 +60,41 @@ Public Class altacliente
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
+
+    Private Sub altacliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call Estados()
+        Call Ciudades()
+    End Sub
+    Public Sub Estados()
+        conbd.Open()
+        sql = "SELECT * FROM cat_estado"
+        mycommand = New MySqlCommand()
+        mycommand.CommandText = sql
+        mycommand.CommandType = CommandType.Text
+        mycommand.Connection = conbd
+        daMySQL = New MySqlDataAdapter(mycommand)
+        ds = New DataSet()
+        daMySQL.Fill(ds)
+        cmbEstado.DataSource = ds.Tables(0)
+        cmbEstado.DisplayMember = "Estado"
+        cmbEstado.ValueMember = "IdEstado"
+        conbd.Close()
+    End Sub
+
+    Public Sub Ciudades()
+        conbd.Open()
+        sql = "SELECT * FROM cat_ciudades"
+        mycommand = New MySqlCommand()
+        mycommand.CommandText = sql
+        mycommand.CommandType = CommandType.Text
+        mycommand.Connection = conbd
+        daMySQL = New MySqlDataAdapter(mycommand)
+        ds = New DataSet()
+        daMySQL.Fill(ds)
+        cmbMunicipio.DataSource = ds.Tables(0)
+        cmbMunicipio.DisplayMember = "Ciudad"
+        cmbMunicipio.ValueMember = "IdCiudad"
+        conbd.Close()
     End Sub
 End Class

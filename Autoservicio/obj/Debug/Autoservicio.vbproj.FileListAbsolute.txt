@@ -51,3 +51,5 @@ C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.datosempresa.
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.datosempresa.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmSucursales.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevaSucursal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevaSucursal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmSucursales.resources
