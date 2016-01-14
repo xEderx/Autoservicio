@@ -1,6 +1,31 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frmNuevaSucursal
+    Public Sub NuevaSucursal()
+        If txtNDireccion.Text = "" Or txtNCP.Text = "" Then
+            MessageBox.Show("¡Hay algunos campos vacios!", "Inserción.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        Else
+            Dim tran As MySqlTransaction
+            Try
+                ccbd.conectarbd()
+                conbd.Open()
+                tran = conbd.BeginTransaction
+                sql = "INSERT INTO tbl_sucursal (Sucursal, Domicilio, CP, Cat_Estado_IdEstado, Cat_Ciudades_IdCiudad) VALUES ('" & txtNSucursal.Text & "', '" & txtNDireccion.Text & "', " & txtNCP.Text & ", " & cmbEstado.SelectedValue & ", " & cmbMunicipio.SelectedValue & ")"
+                mycommand = New MySqlCommand(sql)
+                mycommand.Connection = conbd
+                mycommand.Transaction = tran
+                mycommand.ExecuteNonQuery()
+                MessageBox.Show("El usuario fue agregado correctamente.", "Inserción.", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                tran.Commit()
+                conbd.Close()
+                Me.Close()
+            Catch ex As Exception
+                tran.Rollback()
+                conbd.Close()
+                MessageBox.Show("No se pudo agregar el usuario.", "Inserción", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
+    End Sub
     Public Sub Estados()
         conbd.Open()
         sql = "SELECT * FROM cat_estado"
@@ -38,5 +63,9 @@ Public Class frmNuevaSucursal
     End Sub
 
     Private Sub cmbEstado_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cmbEstado.KeyPress
+    End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        Call NuevaSucursal()
     End Sub
 End Class
