@@ -99,6 +99,12 @@
     <Compile Include="altacliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmModificarSucursal.Designer.vb">
+      <DependentUpon>frmModificarSucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarSucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmModificaUsuario.Designer.vb">
       <DependentUpon>frmModificaUsuario.vb</DependentUpon>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarSucursal.resx">
+      <DependentUpon>frmModificarSucursal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificaUsuario.resx">
       <DependentUpon>frmModificaUsuario.vb</DependentUpon>

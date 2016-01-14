@@ -68,4 +68,16 @@ Public Class frmNuevaSucursal
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         Call NuevaSucursal()
     End Sub
+
+    Private Sub txtNSucursal_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNSucursal.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Call NuevaSucursal()
+        End If
+    End Sub
+
+    Private Sub txtNCP_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNCP.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Call NuevaSucursal()
+        End If
+    End Sub
 End Class

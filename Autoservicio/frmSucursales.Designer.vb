@@ -28,8 +28,8 @@ Partial Class frmSucursales
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.dtgUsuarios = New System.Windows.Forms.DataGridView()
-        CType(Me.dtgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dtgSucursales = New System.Windows.Forms.DataGridView()
+        CType(Me.dtgSucursales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnEliminar
@@ -77,14 +77,14 @@ Partial Class frmSucursales
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Sucursal"
         '
-        'dtgUsuarios
+        'dtgSucursales
         '
-        Me.dtgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgUsuarios.Location = New System.Drawing.Point(13, 102)
-        Me.dtgUsuarios.Name = "dtgUsuarios"
-        Me.dtgUsuarios.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.dtgUsuarios.Size = New System.Drawing.Size(539, 143)
-        Me.dtgUsuarios.TabIndex = 6
+        Me.dtgSucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgSucursales.Location = New System.Drawing.Point(13, 102)
+        Me.dtgSucursales.Name = "dtgSucursales"
+        Me.dtgSucursales.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.dtgSucursales.Size = New System.Drawing.Size(539, 143)
+        Me.dtgSucursales.TabIndex = 6
         '
         'frmSucursales
         '
@@ -97,12 +97,12 @@ Partial Class frmSucursales
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.dtgUsuarios)
+        Me.Controls.Add(Me.dtgSucursales)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSucursales"
         Me.Text = "Sucursales"
-        CType(Me.dtgUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgSucursales, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -113,5 +113,5 @@ Partial Class frmSucursales
     Friend WithEvents btnBuscar As Button
     Friend WithEvents txtBuscar As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents dtgUsuarios As DataGridView
+    Friend WithEvents dtgSucursales As DataGridView
 End Class

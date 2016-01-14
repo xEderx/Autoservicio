@@ -134,6 +134,7 @@ Partial Class frmNuevaSucursal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(369, 305)
         Me.Controls.Add(Me.cmbMunicipio)
         Me.Controls.Add(Me.cmbEstado)
