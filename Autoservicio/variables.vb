@@ -4,6 +4,7 @@ Imports MySql.Data.MySqlClient
 
 Module variables
     Public sql As String
+    Public sql2 As String
     Public vid As Integer
     Public vsesion As Integer
     Public vid_usuario As Integer

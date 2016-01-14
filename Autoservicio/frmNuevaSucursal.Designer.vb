@@ -114,6 +114,7 @@ Partial Class frmNuevaSucursal
         '
         'cmbEstado
         '
+        Me.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbEstado.FormattingEnabled = True
         Me.cmbEstado.Location = New System.Drawing.Point(73, 178)
         Me.cmbEstado.Name = "cmbEstado"
@@ -122,6 +123,7 @@ Partial Class frmNuevaSucursal
         '
         'cmbMunicipio
         '
+        Me.cmbMunicipio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbMunicipio.FormattingEnabled = True
         Me.cmbMunicipio.Location = New System.Drawing.Point(73, 214)
         Me.cmbMunicipio.Name = "cmbMunicipio"

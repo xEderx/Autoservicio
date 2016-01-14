@@ -72,6 +72,6 @@
     End Sub
 
     Private Sub SucursalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SucursalesToolStripMenuItem.Click
-        frmSucursales.ShowDialog()
+        frmSucursales.Show()
     End Sub
 End Class
