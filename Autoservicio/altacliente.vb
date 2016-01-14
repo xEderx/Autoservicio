@@ -1,4 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
+
+Imports System.Data.SqlClient
 Public Class altacliente
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         ' ccbd.conectarbd()
@@ -42,7 +44,7 @@ Public Class altacliente
                 ccbd.conectarbd()
                 conbd.Open()
                 tran = conbd.BeginTransaction
-                sql = "INSERT INTO cliente(cod_cli,t_cli,nom_cli,dni_cli,edo_cli,ciu_cli,cp_cli,tel_cli,email_cli) VALUES ('" & txtrfc.Text & "', '" & txttipo.Text & "','" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txtestado.Text & "', '" & txtciudad.Text & "', '" & txtcp.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & "')"
+                sql = "INSERT INTO cliente(cod_cli,t_cli,nom_cli,dni_cli,cp_cli,tel_cli,email_cli,Cat_Estado_IdEstado,Cat_Ciudades_IdCiudad) VALUES ('" & txtrfc.Text & "', '" & txttipo.Text & "','" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txtcp.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & "', " & cmbEstado.SelectedValue & ", " & cmbMunicipio.SelectedValue & ")"
                 mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
                 mycommand.Transaction = tran
@@ -63,6 +65,7 @@ Public Class altacliente
 
 
     Private Sub altacliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Call Estados()
         Call Ciudades()
     End Sub
@@ -97,4 +100,5 @@ Public Class altacliente
         cmbMunicipio.ValueMember = "IdCiudad"
         conbd.Close()
     End Sub
+
 End Class

@@ -25,11 +25,7 @@ Partial Class altacliente
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(altacliente))
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.txtcp = New System.Windows.Forms.TextBox()
-        Me.txtciudad = New System.Windows.Forms.TextBox()
-        Me.txtestado = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.txtcorreo = New System.Windows.Forms.TextBox()
         Me.txttelefono = New System.Windows.Forms.TextBox()
         Me.txtdomicilio = New System.Windows.Forms.TextBox()
@@ -46,6 +42,7 @@ Partial Class altacliente
         Me.cmbEstado = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnGuardar
@@ -59,62 +56,30 @@ Partial Class altacliente
         '
         'txtcp
         '
-        Me.txtcp.Location = New System.Drawing.Point(110, 215)
+        Me.txtcp.Location = New System.Drawing.Point(111, 154)
         Me.txtcp.Name = "txtcp"
         Me.txtcp.Size = New System.Drawing.Size(170, 20)
         Me.txtcp.TabIndex = 58
         '
-        'txtciudad
-        '
-        Me.txtciudad.Location = New System.Drawing.Point(110, 176)
-        Me.txtciudad.Name = "txtciudad"
-        Me.txtciudad.Size = New System.Drawing.Size(170, 20)
-        Me.txtciudad.TabIndex = 57
-        '
-        'txtestado
-        '
-        Me.txtestado.Location = New System.Drawing.Point(109, 147)
-        Me.txtestado.Name = "txtestado"
-        Me.txtestado.Size = New System.Drawing.Size(170, 20)
-        Me.txtestado.TabIndex = 56
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(34, 215)
+        Me.Label6.Location = New System.Drawing.Point(35, 154)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(23, 13)
         Me.Label6.TabIndex = 55
         Me.Label6.Text = "Cp:"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(34, 176)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 13)
-        Me.Label7.TabIndex = 54
-        Me.Label7.Text = "Ciudad:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(35, 147)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 13)
-        Me.Label8.TabIndex = 53
-        Me.Label8.Text = "Estado:"
-        '
         'txtcorreo
         '
-        Me.txtcorreo.Location = New System.Drawing.Point(109, 276)
+        Me.txtcorreo.Location = New System.Drawing.Point(110, 215)
         Me.txtcorreo.Name = "txtcorreo"
         Me.txtcorreo.Size = New System.Drawing.Size(170, 20)
         Me.txtcorreo.TabIndex = 52
         '
         'txttelefono
         '
-        Me.txttelefono.Location = New System.Drawing.Point(109, 244)
+        Me.txttelefono.Location = New System.Drawing.Point(110, 183)
         Me.txttelefono.Name = "txttelefono"
         Me.txttelefono.Size = New System.Drawing.Size(170, 20)
         Me.txttelefono.TabIndex = 51
@@ -143,7 +108,7 @@ Partial Class altacliente
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(34, 279)
+        Me.Label5.Location = New System.Drawing.Point(35, 218)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(32, 13)
         Me.Label5.TabIndex = 47
@@ -152,7 +117,7 @@ Partial Class altacliente
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(33, 251)
+        Me.Label4.Location = New System.Drawing.Point(34, 190)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 46
@@ -205,7 +170,7 @@ Partial Class altacliente
         '
         Me.cmbMunicipio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbMunicipio.FormattingEnabled = True
-        Me.cmbMunicipio.Location = New System.Drawing.Point(110, 345)
+        Me.cmbMunicipio.Location = New System.Drawing.Point(111, 284)
         Me.cmbMunicipio.Name = "cmbMunicipio"
         Me.cmbMunicipio.Size = New System.Drawing.Size(170, 21)
         Me.cmbMunicipio.TabIndex = 64
@@ -214,7 +179,7 @@ Partial Class altacliente
         '
         Me.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbEstado.FormattingEnabled = True
-        Me.cmbEstado.Location = New System.Drawing.Point(110, 309)
+        Me.cmbEstado.Location = New System.Drawing.Point(111, 248)
         Me.cmbEstado.Name = "cmbEstado"
         Me.cmbEstado.Size = New System.Drawing.Size(170, 21)
         Me.cmbEstado.TabIndex = 63
@@ -222,7 +187,7 @@ Partial Class altacliente
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(34, 348)
+        Me.Label10.Location = New System.Drawing.Point(35, 287)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(55, 13)
         Me.Label10.TabIndex = 62
@@ -231,17 +196,25 @@ Partial Class altacliente
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(35, 309)
+        Me.Label11.Location = New System.Drawing.Point(36, 248)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(43, 13)
         Me.Label11.TabIndex = 61
         Me.Label11.Text = "Estado:"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(108, 336)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(173, 20)
+        Me.TextBox1.TabIndex = 65
+        '
         'altacliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(361, 399)
+        Me.ClientSize = New System.Drawing.Size(361, 373)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.cmbMunicipio)
         Me.Controls.Add(Me.cmbEstado)
         Me.Controls.Add(Me.Label10)
@@ -249,11 +222,7 @@ Partial Class altacliente
         Me.Controls.Add(Me.txttipo)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.txtcp)
-        Me.Controls.Add(Me.txtciudad)
-        Me.Controls.Add(Me.txtestado)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtcorreo)
         Me.Controls.Add(Me.txttelefono)
         Me.Controls.Add(Me.txtdomicilio)
@@ -274,11 +243,7 @@ Partial Class altacliente
 
     Friend WithEvents btnGuardar As Button
     Friend WithEvents txtcp As TextBox
-    Friend WithEvents txtciudad As TextBox
-    Friend WithEvents txtestado As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents txtcorreo As TextBox
     Friend WithEvents txttelefono As TextBox
     Friend WithEvents txtdomicilio As TextBox
@@ -295,4 +260,5 @@ Partial Class altacliente
     Friend WithEvents cmbEstado As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

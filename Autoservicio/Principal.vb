@@ -19,7 +19,7 @@
         Clientes.Show()
     End Sub
 
-    Private Sub AToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AToolStripMenuItem.Click
+    Private Sub AToolStripMenuItem_Click(sender As Object, e As EventArgs)
         altacliente.Show()
     End Sub
 
@@ -67,11 +67,17 @@
 
     End Sub
 
-    Private Sub InventariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InventariosToolStripMenuItem.Click
 
-    End Sub
 
     Private Sub SucursalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SucursalesToolStripMenuItem.Click
         frmSucursales.Show()
+    End Sub
+
+    Private Sub ClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub NuevaVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevaVentaToolStripMenuItem.Click
+        frmNuevaventa.Show()
     End Sub
 End Class
