@@ -30,6 +30,12 @@ Partial Class frmNuevaventa
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.dtgSucursales = New System.Windows.Forms.DataGridView()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.cmbMEstado = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        CType(Me.dtgSucursales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtNSucursal
@@ -42,7 +48,7 @@ Partial Class frmNuevaventa
         'btnGuardar
         '
         Me.btnGuardar.BackgroundImage = CType(resources.GetObject("btnGuardar.BackgroundImage"), System.Drawing.Image)
-        Me.btnGuardar.Location = New System.Drawing.Point(390, 233)
+        Me.btnGuardar.Location = New System.Drawing.Point(399, 233)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(52, 48)
         Me.btnGuardar.TabIndex = 23
@@ -93,11 +99,59 @@ Partial Class frmNuevaventa
         Me.Label4.TabIndex = 31
         Me.Label4.Text = "Cliente"
         '
+        'dtgSucursales
+        '
+        Me.dtgSucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgSucursales.Location = New System.Drawing.Point(12, 233)
+        Me.dtgSucursales.Name = "dtgSucursales"
+        Me.dtgSucursales.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.dtgSucursales.Size = New System.Drawing.Size(381, 143)
+        Me.dtgSucursales.TabIndex = 32
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(151, 98)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(222, 20)
+        Me.TextBox1.TabIndex = 33
+        '
+        'cmbMEstado
+        '
+        Me.cmbMEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMEstado.FormattingEnabled = True
+        Me.cmbMEstado.Location = New System.Drawing.Point(151, 62)
+        Me.cmbMEstado.Name = "cmbMEstado"
+        Me.cmbMEstado.Size = New System.Drawing.Size(222, 21)
+        Me.cmbMEstado.TabIndex = 34
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(151, 137)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(222, 21)
+        Me.ComboBox1.TabIndex = 35
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(151, 182)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(222, 21)
+        Me.ComboBox2.TabIndex = 36
+        '
         'frmNuevaventa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(454, 390)
+        Me.ClientSize = New System.Drawing.Size(467, 390)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbMEstado)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.dtgSucursales)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label6)
@@ -107,6 +161,7 @@ Partial Class frmNuevaventa
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmNuevaventa"
         Me.Text = "Form2"
+        CType(Me.dtgSucursales, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -119,4 +174,9 @@ Partial Class frmNuevaventa
     Friend WithEvents Label6 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents dtgSucursales As DataGridView
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents cmbMEstado As ComboBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class
