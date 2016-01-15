@@ -6,7 +6,7 @@ Public Class frmVentas
 
     Private Sub frmVentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call cargadatos()
-        Call cargadatos2()
+        Call cargadatos2)
 
     End Sub
     Public Sub cargadatos()
