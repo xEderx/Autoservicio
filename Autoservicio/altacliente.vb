@@ -44,7 +44,7 @@ Public Class altacliente
                 ccbd.conectarbd()
                 conbd.Open()
                 tran = conbd.BeginTransaction
-                sql = "INSERT INTO cliente(cod_cli,t_cli,nom_cli,dni_cli,cp_cli,tel_cli,email_cli,Cat_Estado_IdEstado,Cat_Ciudades_IdCiudad) VALUES ('" & txtrfc.Text & "', '" & txttipo.Text & "','" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txtcp.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & "', " & cmbEstado.SelectedValue & ", " & cmbMunicipio.SelectedValue & ")"
+                sql = "INSERT INTO cliente(cod_cli,t_cli,nom_cli,dni_clin,cp_cli,tel_cli,email_cli,Cat_Estado_IdEstado,Cat_Ciudades_IdCiudad) VALUES ('" & txtrfc.Text & "', '" & txttipo.Text & "','" & txtnombre.Text & "', '" & txtdomicilio.Text & "', '" & txtcp.Text & "', '" & txttelefono.Text & "', '" & txtcorreo.Text & "', " & cmbEstado.SelectedValue & ", " & cmbMunicipio.SelectedValue & ")"
                 mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
                 mycommand.Transaction = tran

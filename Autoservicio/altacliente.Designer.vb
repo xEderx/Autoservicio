@@ -42,7 +42,6 @@ Partial Class altacliente
         Me.cmbEstado = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnGuardar
@@ -202,19 +201,11 @@ Partial Class altacliente
         Me.Label11.TabIndex = 61
         Me.Label11.Text = "Estado:"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(108, 336)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(173, 20)
-        Me.TextBox1.TabIndex = 65
-        '
         'altacliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(361, 373)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.cmbMunicipio)
         Me.Controls.Add(Me.cmbEstado)
         Me.Controls.Add(Me.Label10)
@@ -260,5 +251,4 @@ Partial Class altacliente
     Friend WithEvents cmbEstado As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox1 As TextBox
 End Class
