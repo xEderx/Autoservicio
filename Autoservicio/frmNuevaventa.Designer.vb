@@ -23,7 +23,7 @@ Partial Class frmNuevaventa
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmNuevaventa))
-        Me.txtNSucursal = New System.Windows.Forms.TextBox()
+        Me.txttiket = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,24 +31,24 @@ Partial Class frmNuevaventa
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dtgSucursales = New System.Windows.Forms.DataGridView()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtprecio = New System.Windows.Forms.TextBox()
         Me.cmbProducto = New System.Windows.Forms.ComboBox()
         Me.cmbcliente = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbsucursal = New System.Windows.Forms.ComboBox()
         CType(Me.dtgSucursales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'txtNSucursal
+        'txttiket
         '
-        Me.txtNSucursal.Location = New System.Drawing.Point(151, 32)
-        Me.txtNSucursal.Name = "txtNSucursal"
-        Me.txtNSucursal.Size = New System.Drawing.Size(222, 20)
-        Me.txtNSucursal.TabIndex = 24
+        Me.txttiket.Location = New System.Drawing.Point(151, 32)
+        Me.txttiket.Name = "txttiket"
+        Me.txttiket.Size = New System.Drawing.Size(222, 20)
+        Me.txttiket.TabIndex = 24
         '
         'btnGuardar
         '
         Me.btnGuardar.BackgroundImage = CType(resources.GetObject("btnGuardar.BackgroundImage"), System.Drawing.Image)
-        Me.btnGuardar.Location = New System.Drawing.Point(399, 233)
+        Me.btnGuardar.Location = New System.Drawing.Point(431, 182)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(52, 48)
         Me.btnGuardar.TabIndex = 23
@@ -108,12 +108,12 @@ Partial Class frmNuevaventa
         Me.dtgSucursales.Size = New System.Drawing.Size(381, 143)
         Me.dtgSucursales.TabIndex = 32
         '
-        'TextBox1
+        'txtprecio
         '
-        Me.TextBox1.Location = New System.Drawing.Point(151, 98)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(222, 20)
-        Me.TextBox1.TabIndex = 33
+        Me.txtprecio.Location = New System.Drawing.Point(151, 98)
+        Me.txtprecio.Name = "txtprecio"
+        Me.txtprecio.Size = New System.Drawing.Size(222, 20)
+        Me.txtprecio.TabIndex = 33
         '
         'cmbProducto
         '
@@ -133,29 +133,29 @@ Partial Class frmNuevaventa
         Me.cmbcliente.Size = New System.Drawing.Size(222, 21)
         Me.cmbcliente.TabIndex = 35
         '
-        'ComboBox2
+        'cmbsucursal
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(151, 182)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(222, 21)
-        Me.ComboBox2.TabIndex = 36
+        Me.cmbsucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbsucursal.FormattingEnabled = True
+        Me.cmbsucursal.Location = New System.Drawing.Point(151, 182)
+        Me.cmbsucursal.Name = "cmbsucursal"
+        Me.cmbsucursal.Size = New System.Drawing.Size(222, 21)
+        Me.cmbsucursal.TabIndex = 36
         '
         'frmNuevaventa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(495, 390)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cmbsucursal)
         Me.Controls.Add(Me.cmbcliente)
         Me.Controls.Add(Me.cmbProducto)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtprecio)
         Me.Controls.Add(Me.dtgSucursales)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txtNSucursal)
+        Me.Controls.Add(Me.txttiket)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -167,7 +167,7 @@ Partial Class frmNuevaventa
 
     End Sub
 
-    Friend WithEvents txtNSucursal As TextBox
+    Friend WithEvents txttiket As TextBox
     Friend WithEvents btnGuardar As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
@@ -175,8 +175,8 @@ Partial Class frmNuevaventa
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents dtgSucursales As DataGridView
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtprecio As TextBox
     Friend WithEvents cmbProducto As ComboBox
     Friend WithEvents cmbcliente As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmbsucursal As ComboBox
 End Class

@@ -88,4 +88,20 @@
     Private Sub VentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasToolStripMenuItem.Click
         frmVentas.Show()
     End Sub
+
+    Private Sub NuevaVentaToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles NuevaVentaToolStripMenuItem.Click
+        frmVentas.Show()
+        frmVentas.Close()
+        frmNuevaventa.Show()
+    End Sub
+
+    Private Sub AltaClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AltaClienteToolStripMenuItem.Click
+        Clientes.Show()
+        Clientes.Close()
+        altacliente.Show()
+    End Sub
+
+    Private Sub VentasToolStripMenuItem1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
