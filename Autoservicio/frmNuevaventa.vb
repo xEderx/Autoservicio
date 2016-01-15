@@ -97,7 +97,7 @@ Public Class frmNuevaventa
             Try
                 ccbd.conectarbd()
                 conbd.Open()
-                tran = conbd.BeginTransaction
+            tran = conbd.BeginTransaction
             sql = "INSERT INTO tbl_ventas_has_cat_productos(Tbl_Ventas_Ticket,Cat_Productos_CodBarra,Cantidad,Precio_venta) VALUES (" & txttiket.Text & ", " & cmbProducto.SelectedValue & ", " & Txtcantidad.Text & ", " & txtprecio.Text & ")"
             mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
