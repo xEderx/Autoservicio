@@ -101,4 +101,8 @@ Public Class frmUsuarios
         objModificaUsuario.ShowDialog()
         Call cargadatos()
     End Sub
+
+    Private Sub btnBuscar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles btnBuscar.KeyPress
+        Call BuscarUsuario()
+    End Sub
 End Class

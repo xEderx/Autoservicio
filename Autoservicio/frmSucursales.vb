@@ -68,4 +68,32 @@ Public Class frmSucursales
         objModificarSucursal.ShowDialog()
         Call cargadatos()
     End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        Dim tran As MySqlTransaction
+        Try
+            ccbd.conectarbd()
+            conbd.Open()
+            tran = conbd.BeginTransaction
+            sql = "DELETE FROM tbl_sucursal WHERE IdSucursal = " & vid
+            mycommand = New MySqlCommand(sql)
+            mycommand.Connection = conbd
+            mycommand.Transaction = tran
+            mycommand.ExecuteNonQuery()
+            MessageBox.Show("La sucursal fue dada de baja.", "Eliminación.", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            tran.Commit()
+            conbd.Close()
+            Call cargadatos()
+
+        Catch ex As Exception
+            tran.Rollback()
+            conbd.Close()
+            MessageBox.Show("No se pudo eliminar la sucursal.", "Eliminación.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub dtgSucursales_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgSucursales.CellClick
+        Dim ind As Integer = dtgSucursales.CurrentRow.Index
+        vid = Convert.ToInt32(dtgSucursales.Item("IdSucursal", ind).Value)
+    End Sub
 End Class
