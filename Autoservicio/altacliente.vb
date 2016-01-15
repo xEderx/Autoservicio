@@ -101,4 +101,7 @@ Public Class altacliente
         conbd.Close()
     End Sub
 
+    Private Sub cmbEstado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbEstado.SelectedIndexChanged
+
+    End Sub
 End Class

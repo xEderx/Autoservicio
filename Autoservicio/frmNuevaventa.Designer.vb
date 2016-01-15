@@ -32,8 +32,8 @@ Partial Class frmNuevaventa
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dtgSucursales = New System.Windows.Forms.DataGridView()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.cmbMEstado = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbProducto = New System.Windows.Forms.ComboBox()
+        Me.cmbcliente = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         CType(Me.dtgSucursales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -115,23 +115,23 @@ Partial Class frmNuevaventa
         Me.TextBox1.Size = New System.Drawing.Size(222, 20)
         Me.TextBox1.TabIndex = 33
         '
-        'cmbMEstado
+        'cmbProducto
         '
-        Me.cmbMEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbMEstado.FormattingEnabled = True
-        Me.cmbMEstado.Location = New System.Drawing.Point(151, 62)
-        Me.cmbMEstado.Name = "cmbMEstado"
-        Me.cmbMEstado.Size = New System.Drawing.Size(222, 21)
-        Me.cmbMEstado.TabIndex = 34
+        Me.cmbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbProducto.FormattingEnabled = True
+        Me.cmbProducto.Location = New System.Drawing.Point(151, 62)
+        Me.cmbProducto.Name = "cmbProducto"
+        Me.cmbProducto.Size = New System.Drawing.Size(222, 21)
+        Me.cmbProducto.TabIndex = 34
         '
-        'ComboBox1
+        'cmbcliente
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(151, 137)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(222, 21)
-        Me.ComboBox1.TabIndex = 35
+        Me.cmbcliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbcliente.FormattingEnabled = True
+        Me.cmbcliente.Location = New System.Drawing.Point(151, 137)
+        Me.cmbcliente.Name = "cmbcliente"
+        Me.cmbcliente.Size = New System.Drawing.Size(222, 21)
+        Me.cmbcliente.TabIndex = 35
         '
         'ComboBox2
         '
@@ -146,10 +146,10 @@ Partial Class frmNuevaventa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(467, 390)
+        Me.ClientSize = New System.Drawing.Size(495, 390)
         Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.cmbMEstado)
+        Me.Controls.Add(Me.cmbcliente)
+        Me.Controls.Add(Me.cmbProducto)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.dtgSucursales)
         Me.Controls.Add(Me.Label4)
@@ -176,7 +176,7 @@ Partial Class frmNuevaventa
     Friend WithEvents Label4 As Label
     Friend WithEvents dtgSucursales As DataGridView
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents cmbMEstado As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbProducto As ComboBox
+    Friend WithEvents cmbcliente As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
 End Class

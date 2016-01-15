@@ -77,11 +77,15 @@
 
     End Sub
 
-    Private Sub NuevaVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevaVentaToolStripMenuItem.Click
+    Private Sub NuevaVentaToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmNuevaventa.Show()
     End Sub
 
-    Private Sub ListadoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ListadoToolStripMenuItem1.Click
+    Private Sub ListadoToolStripMenuItem1_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub VentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasToolStripMenuItem.Click
+        frmVentas.Show()
     End Sub
 End Class
