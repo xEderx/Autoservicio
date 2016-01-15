@@ -1,0 +1,84 @@
+c:\users\eder\documents\visual studio 2015\Projects\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.pdb
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.xml
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.vbprojResolveAssemblyReference.cache
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Form1.resources
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Resources.resources
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.vbproj.GenerateResource.Cache
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.exe
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.xml
+C:\Users\Eder\repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\Eder\repos\Autoservicio\Autoservicio\bin\Debug\MySql.Data.dll
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.exe
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.pdb
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\bin\Debug\Autoservicio.xml
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\bin\Debug\MySql.Data.dll
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.vbprojResolveAssemblyReference.cache
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Form1.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Resources.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.vbproj.GenerateResource.Cache
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.exe
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.xml
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Principal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\bin\Debug\Autoservicio.exe
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\bin\Debug\Autoservicio.pdb
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\bin\Debug\Autoservicio.xml
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\bin\Debug\MySql.Data.dll
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.vbprojResolveAssemblyReference.cache
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.Form1.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.Resources.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.Principal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.vbproj.GenerateResource.Cache
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.exe
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.xml
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.altacliente.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.altacliente.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmUsuarios.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevoUsuario.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmModificaUsuario.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmModificaUsuario.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevoUsuario.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmUsuarios.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.datosempresa.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.datosempresa.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmSucursales.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevaSucursal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevaSucursal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmSucursales.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmModificarSucursal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmModificarSucursal.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
+C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmVentas.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmVentas.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\Autoservicio.exe
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\Autoservicio.pdb
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\Autoservicio.xml
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\MySql.Data.dll
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.altacliente.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.datosempresa.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.Form1.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmModificarSucursal.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmModificaUsuario.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmNuevaSucursal.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmNuevoUsuario.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmSucursales.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmUsuarios.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.frmVentas.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.Resources.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.Principal.resources
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.vbproj.GenerateResource.Cache
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.exe
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.xml
+C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.pdb
