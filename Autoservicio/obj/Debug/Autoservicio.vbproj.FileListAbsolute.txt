@@ -58,3 +58,4 @@ C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmModificarS
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmVentas.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmVentas.resources

@@ -11,8 +11,9 @@
     <AssemblyName>Autoservicio</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -99,12 +100,6 @@
     <Compile Include="altacliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVentas.Designer.vb">
-      <DependentUpon>frmVentas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmVentas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmNuevaventa.Designer.vb">
       <DependentUpon>frmNuevaventa.vb</DependentUpon>
     </Compile>
@@ -147,6 +142,7 @@
     <Compile Include="frmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmVentas.Designer.vb" />
     <Compile Include="Principal.Designer.vb">
       <DependentUpon>Principal.vb</DependentUpon>
     </Compile>
@@ -204,9 +200,7 @@
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmVentas.resx">
-      <DependentUpon>frmVentas.vb</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
