@@ -10,6 +10,8 @@ Module variables
     Public vid_usuario As Integer
     Public vtipo_usuario As Integer
     Public vactivo_usuario As Boolean
+    Public vestado As Integer
+    Public vmunicipio As Integer
     Public cmdtbl As New OleDbCommand
     Public datbl As New OleDbDataAdapter
     Public rdrtbl As OleDbDataReader

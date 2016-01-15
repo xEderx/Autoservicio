@@ -56,3 +56,4 @@ C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmSucursales
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmModificarSucursal.resources
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmModificarSucursal.resources
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources

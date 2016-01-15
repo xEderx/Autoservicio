@@ -63,8 +63,8 @@ Public Class frmSucursales
         objModificarSucursal.txtMSucursal.Text = Convert.ToString(dtgSucursales.Item("Sucursal", ind).Value)
         objModificarSucursal.txtMDireccion.Text = Convert.ToString(dtgSucursales.Item("Domicilio", ind).Value)
         objModificarSucursal.txtMCP.Text = Convert.ToInt32(dtgSucursales.Item("CP", ind).Value)
-        objModificarSucursal.cmbMEstado.SelectedValue = Convert.ToInt32(dtgSucursales.Item("Cat_Estado_IdEstado", ind).Value)
-        objModificarSucursal.cmbMMunicipio.SelectedValue = Convert.ToInt32(dtgSucursales.Item("Cat_Ciudades_IdCiudad", ind).Value)
+        vestado = Convert.ToInt32(dtgSucursales.Item("Cat_Estado_IdEstado", ind).Value)
+        vmunicipio = Convert.ToInt32(dtgSucursales.Item("Cat_Ciudades_IdCiudad", ind).Value)
         objModificarSucursal.ShowDialog()
         Call cargadatos()
     End Sub

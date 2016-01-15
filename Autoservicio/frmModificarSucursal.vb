@@ -14,6 +14,7 @@ Public Class frmModificarSucursal
         cmbMMunicipio.DataSource = ds.Tables(0)
         cmbMMunicipio.DisplayMember = "Ciudad"
         cmbMMunicipio.ValueMember = "IdCiudad"
+        cmbMMunicipio.SelectedValue = vmunicipio
         conbd.Close()
     End Sub
 
@@ -30,6 +31,7 @@ Public Class frmModificarSucursal
         cmbMEstado.DataSource = ds.Tables(0)
         cmbMEstado.DisplayMember = "Estado"
         cmbMEstado.ValueMember = "IdEstado"
+        cmbMEstado.SelectedValue = vestado
         conbd.Close()
     End Sub
     Private Sub frmModificarSucursal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
