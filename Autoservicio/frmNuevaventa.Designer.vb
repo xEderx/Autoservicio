@@ -35,6 +35,8 @@ Partial Class frmNuevaventa
         Me.cmbProducto = New System.Windows.Forms.ComboBox()
         Me.cmbcliente = New System.Windows.Forms.ComboBox()
         Me.cmbsucursal = New System.Windows.Forms.ComboBox()
+        Me.Txtcantidad = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.dtgSucursales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -75,7 +77,7 @@ Partial Class frmNuevaventa
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(29, 101)
+        Me.Label6.Location = New System.Drawing.Point(29, 127)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(37, 13)
         Me.Label6.TabIndex = 29
@@ -84,7 +86,7 @@ Partial Class frmNuevaventa
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(28, 170)
+        Me.Label3.Location = New System.Drawing.Point(28, 196)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 13)
         Me.Label3.TabIndex = 30
@@ -93,7 +95,7 @@ Partial Class frmNuevaventa
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(28, 137)
+        Me.Label4.Location = New System.Drawing.Point(28, 163)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 13)
         Me.Label4.TabIndex = 31
@@ -102,7 +104,7 @@ Partial Class frmNuevaventa
         'dtgSucursales
         '
         Me.dtgSucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgSucursales.Location = New System.Drawing.Point(12, 233)
+        Me.dtgSucursales.Location = New System.Drawing.Point(12, 250)
         Me.dtgSucursales.Name = "dtgSucursales"
         Me.dtgSucursales.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dtgSucursales.Size = New System.Drawing.Size(381, 143)
@@ -110,7 +112,7 @@ Partial Class frmNuevaventa
         '
         'txtprecio
         '
-        Me.txtprecio.Location = New System.Drawing.Point(151, 98)
+        Me.txtprecio.Location = New System.Drawing.Point(151, 124)
         Me.txtprecio.Name = "txtprecio"
         Me.txtprecio.Size = New System.Drawing.Size(222, 20)
         Me.txtprecio.TabIndex = 33
@@ -128,7 +130,7 @@ Partial Class frmNuevaventa
         '
         Me.cmbcliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbcliente.FormattingEnabled = True
-        Me.cmbcliente.Location = New System.Drawing.Point(151, 137)
+        Me.cmbcliente.Location = New System.Drawing.Point(151, 163)
         Me.cmbcliente.Name = "cmbcliente"
         Me.cmbcliente.Size = New System.Drawing.Size(222, 21)
         Me.cmbcliente.TabIndex = 35
@@ -137,16 +139,34 @@ Partial Class frmNuevaventa
         '
         Me.cmbsucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbsucursal.FormattingEnabled = True
-        Me.cmbsucursal.Location = New System.Drawing.Point(151, 182)
+        Me.cmbsucursal.Location = New System.Drawing.Point(151, 208)
         Me.cmbsucursal.Name = "cmbsucursal"
         Me.cmbsucursal.Size = New System.Drawing.Size(222, 21)
         Me.cmbsucursal.TabIndex = 36
+        '
+        'Txtcantidad
+        '
+        Me.Txtcantidad.Location = New System.Drawing.Point(152, 92)
+        Me.Txtcantidad.Name = "Txtcantidad"
+        Me.Txtcantidad.Size = New System.Drawing.Size(222, 20)
+        Me.Txtcantidad.TabIndex = 38
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(30, 95)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(49, 13)
+        Me.Label5.TabIndex = 37
+        Me.Label5.Text = "Cantidad"
         '
         'frmNuevaventa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(495, 390)
+        Me.ClientSize = New System.Drawing.Size(495, 405)
+        Me.Controls.Add(Me.Txtcantidad)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cmbsucursal)
         Me.Controls.Add(Me.cmbcliente)
         Me.Controls.Add(Me.cmbProducto)
@@ -179,4 +199,6 @@ Partial Class frmNuevaventa
     Friend WithEvents cmbProducto As ComboBox
     Friend WithEvents cmbcliente As ComboBox
     Friend WithEvents cmbsucursal As ComboBox
+    Friend WithEvents Txtcantidad As TextBox
+    Friend WithEvents Label5 As Label
 End Class

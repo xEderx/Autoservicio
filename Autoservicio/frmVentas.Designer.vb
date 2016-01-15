@@ -29,6 +29,8 @@ Partial Class frmVentas
         Me.Btnbuscarrfc = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnbuscartiket = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txttiket = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,11 +94,29 @@ Partial Class frmVentas
         Me.btnbuscartiket.Text = "Buscar Tiket"
         Me.btnbuscartiket.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 38)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(34, 13)
+        Me.Label2.TabIndex = 47
+        Me.Label2.Text = "Tiket:"
+        '
+        'txttiket
+        '
+        Me.txttiket.Location = New System.Drawing.Point(101, 35)
+        Me.txttiket.Name = "txttiket"
+        Me.txttiket.Size = New System.Drawing.Size(265, 20)
+        Me.txttiket.TabIndex = 46
+        '
         'frmVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(874, 379)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txttiket)
         Me.Controls.Add(Me.btnbuscartiket)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Btnbuscarrfc)
@@ -120,4 +140,6 @@ Partial Class frmVentas
     Friend WithEvents Btnbuscarrfc As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents btnbuscartiket As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txttiket As TextBox
 End Class

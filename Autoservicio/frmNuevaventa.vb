@@ -47,7 +47,7 @@ Public Class frmNuevaventa
         ds = New DataSet()
         daMySQL.Fill(ds)
         cmbProducto.DataSource = ds.Tables(0)
-        cmbProducto.DisplayMember = "Producto"
+        cmbProducto.DisplayMember = "CodBarra"
         cmbProducto.ValueMember = "CodBarra"
         conbd.Close()
 
@@ -59,13 +59,17 @@ Public Class frmNuevaventa
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        Call Nuevaventa1()
-    End Sub
-    Public Sub Nuevaventa1()
-        If txtprecio.Text = "" Or txttiket.Text = "" Then
+        If txtprecio.Text = "" Or txttiket.Text = "" Or txtprecio.Text = "" Then
             MessageBox.Show("¡Hay algunos campos vacios!", "Inserción.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
-            Dim tran As MySqlTransaction
+            Call Nuevaventa1()
+            Call Nuevaventa2()
+        End If
+
+    End Sub
+    Public Sub Nuevaventa1()
+
+        Dim tran As MySqlTransaction
             Try
                 ccbd.conectarbd()
                 conbd.Open()
@@ -85,6 +89,30 @@ Public Class frmNuevaventa
                 conbd.Close()
                 MessageBox.Show("No se pudo agregar la venta.", "Inserción", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
-        End If
+
+    End Sub
+    Public Sub Nuevaventa2()
+
+        Dim tran As MySqlTransaction
+            Try
+                ccbd.conectarbd()
+                conbd.Open()
+                tran = conbd.BeginTransaction
+            sql = "INSERT INTO tbl_ventas_has_cat_productos(Tbl_Ventas_Ticket,Cat_Productos_CodBarra,Cantidad,Precio_venta) VALUES (" & txttiket.Text & ", " & cmbProducto.SelectedValue & ", " & Txtcantidad.Text & ", " & txtprecio.Text & ")"
+            mycommand = New MySqlCommand(sql)
+                mycommand.Connection = conbd
+                mycommand.Transaction = tran
+                mycommand.ExecuteNonQuery()
+
+                MessageBox.Show("La venta fue agregado correctamente.", "Inserción.", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                tran.Commit()
+                conbd.Close()
+                Me.Close()
+            Catch ex As Exception
+                tran.Rollback()
+                conbd.Close()
+                MessageBox.Show("No se pudo agregar la venta.", "Inserción", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+
     End Sub
 End Class
