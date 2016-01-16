@@ -29,17 +29,17 @@ Public Class Form1
         End If
     End Sub
 
-    Public Sub Ticket()
-        ccbd.conectarbd()
-        conbd.Open()
-        sql = "SELECT * FROM tbl_ventas"
-        mycommand = New MySqlCommand(sql)
-        mycommand.Connection = conbd
-        Dim mydata As MySqlDataReader
-        mydata = mycommand.ExecuteReader()
-        mydata.Read()
-        vticket = mydata(0)
-    End Sub
+    'Public Sub Ticket()
+    '    ccbd.conectarbd()
+    '    conbd.Open()
+    '    sql = "SELECT * FROM tbl_ventas"
+    '    mycommand = New MySqlCommand(sql)
+    '    mycommand.Connection = conbd
+    '    Dim mydata As MySqlDataReader
+    '    mydata = mycommand.ExecuteReader()
+    '    mydata.Read()
+    '    vticket = mydata(0)
+    'End Sub
 
     Public Sub Sucursal()
         ccbd.conectarbd()
@@ -71,7 +71,6 @@ Public Class Form1
     Private Sub txtContrasenia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtContrasenia.KeyPress
         If e.KeyChar = ChrW(Keys.Enter) Then
             Call Acceso()
-            Call Ticket()
         End If
     End Sub
 
