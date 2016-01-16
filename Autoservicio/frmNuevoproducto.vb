@@ -10,7 +10,7 @@ Public Class frmNuevoproducto
     End Sub
     Public Sub tipo()
         conbd.Open()
-        sql = "SELECT * FROM cat_tipoproductos"
+        sql = "SELECT * FROM    "
         mycommand = New MySqlCommand()
         mycommand.CommandText = sql
         mycommand.CommandType = CommandType.Text
@@ -24,7 +24,7 @@ Public Class frmNuevoproducto
         conbd.Close()
     End Sub
 
-    Private Sub btnMGuardar_Click(sender As Object, e As EventArgs) Handles btnMGuardar.Click
+    Private Sub btnMGuardar_Click(sender As Object, e As EventArgs)
         Call Nuevoproducto()
     End Sub
     Public Sub Nuevoproducto()
@@ -53,4 +53,7 @@ Public Class frmNuevoproducto
         End If
     End Sub
 
+    Private Sub btnMGuardar_Click_1(sender As Object, e As EventArgs) Handles btnMGuardar.Click
+        Call Nuevoproducto()
+    End Sub
 End Class
