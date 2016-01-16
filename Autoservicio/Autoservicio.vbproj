@@ -205,6 +205,9 @@
     <EmbeddedResource Include="frmAgregarProductos.resx">
       <DependentUpon>frmAgregarProductos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmModificaRproducto.resx">
+      <DependentUpon>frmModificarproducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModificarSucursal.resx">
       <DependentUpon>frmModificarSucursal.vb</DependentUpon>
     </EmbeddedResource>
