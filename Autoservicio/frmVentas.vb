@@ -1,13 +1,11 @@
-﻿Imports System.Data.OleDb
-Imports MySql.Data.MySqlClient
-Public Class frmVenta
+﻿Imports MySql.Data.MySqlClient
+Public Class frmVentas
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnnueva.Click
         frmNuevaventa.Show()
     End Sub
 
     Private Sub frmVentas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call cargadatos()
-        Call cargadatos2()
 
     End Sub
     Public Sub cargadatos()
@@ -79,11 +77,5 @@ Public Class frmVenta
             Me.DataGridView2.DataSource = dt
         Catch ex As Exception
         End Try
-    End Sub
-
-
-
-    Private Sub frmVentas_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

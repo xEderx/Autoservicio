@@ -86,12 +86,12 @@
     End Sub
 
     Private Sub VentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasToolStripMenuItem.Click
-        frmVenta.Show()
+        frmVentas.Show()
     End Sub
 
     Private Sub NuevaVentaToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles NuevaVentaToolStripMenuItem.Click
-        frmVenta.Show()
-        frmVenta.Close()
+        frmVentas.Show()
+        frmVentas.Close()
         frmNuevaventa.Show()
     End Sub
 
