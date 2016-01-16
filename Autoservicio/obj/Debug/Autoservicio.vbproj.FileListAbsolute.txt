@@ -110,3 +110,4 @@ C:\Users\LUIS\Desktop\nube\Autoservicio\bin\Debug\Autoservicio.pdb
 C:\Users\LUIS\Desktop\nube\Autoservicio\bin\Debug\Autoservicio.xml
 C:\Users\LUIS\Desktop\nube\Autoservicio\bin\Debug\MySql.Data.dll
 C:\Users\LUIS\Desktop\nube\Autoservicio\obj\Debug\Autoservicio.frmModificarProducto.resources
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevoproducto.resources

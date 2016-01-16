@@ -100,12 +100,6 @@
     <Compile Include="altacliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmModificarProducto.Designer.vb">
-      <DependentUpon>frmModificarProducto.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmModificarProducto.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmNuevoproducto.Designer.vb">
       <DependentUpon>frmNuevoproducto.vb</DependentUpon>
     </Compile>
@@ -201,9 +195,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmModificarProducto.resx">
-      <DependentUpon>frmModificarProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarProductos.resx">
       <DependentUpon>frmAgregarProductos.vb</DependentUpon>
