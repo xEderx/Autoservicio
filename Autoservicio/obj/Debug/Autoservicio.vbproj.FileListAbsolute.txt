@@ -82,3 +82,7 @@ C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\D
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.xml
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.pdb
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmAgregarProductos.resources
+C:\Users\LUIS\Desktop\nube\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\LUIS\Desktop\nube\Autoservicio\obj\Debug\Autoservicio.exe
+C:\Users\LUIS\Desktop\nube\Autoservicio\obj\Debug\Autoservicio.xml
+C:\Users\LUIS\Desktop\nube\Autoservicio\obj\Debug\Autoservicio.pdb
