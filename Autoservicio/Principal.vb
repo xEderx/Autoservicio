@@ -31,6 +31,7 @@ Public Class Principal
             MessageBox.Show("Error al generar el ticket.", "Generación de ticket.", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
     Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
         Me.Hide()
         Form1.Show()
@@ -53,7 +54,6 @@ Public Class Principal
     End Sub
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblFolio.Text = vticket + 1
         Call Sesion()
     End Sub
 
