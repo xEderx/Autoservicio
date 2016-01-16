@@ -16,18 +16,19 @@ Public Class Principal
             conbd.Open()
             tran = conbd.BeginTransaction
             'sql = "INSERT INTO tbl_sucursal (Sucursal, Domicilio, CP, Cat_Estado_IdEstado, Cat_Ciudades_IdCiudad) VALUES ('" & txtNSucursal.Text & "', '" & txtNDireccion.Text & "', " & txtNCP.Text & ", " & cmbEstado.SelectedValue & ", " & cmbMunicipio.SelectedValue & ")"
+            sql = "INSERT INTO tbl_ventas (cliente_cod_cli, Tbl_sucursal_IdSucursal) VALUES ('Público general', " & vsucursal & ")"
             mycommand = New MySqlCommand(sql)
             mycommand.Connection = conbd
             mycommand.Transaction = tran
             mycommand.ExecuteNonQuery()
-            MessageBox.Show("El usuario fue agregado correctamente.", "Inserción.", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Ticket generado correctamente.", "Generación de ticket.", MessageBoxButtons.OK, MessageBoxIcon.Information)
             tran.Commit()
             conbd.Close()
-            Me.Close()
+            frmAgregarProductos.ShowDialog()
         Catch ex As Exception
             tran.Rollback()
             conbd.Close()
-            MessageBox.Show("No se pudo agregar el usuario.", "Inserción", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Error al generar el ticket.", "Generación de ticket.", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
     Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
@@ -141,7 +142,7 @@ Public Class Principal
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAgregarProducto.Click
-        frmAgregarProductos.ShowDialog()
+        Call AgregarProducto()
     End Sub
 
     Private Sub chkTipocliente_CheckedChanged(sender As Object, e As EventArgs) Handles chkTipocliente.CheckedChanged

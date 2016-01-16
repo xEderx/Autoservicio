@@ -86,3 +86,4 @@ C:\Users\LUIS\Desktop\nube\Autoservicio\bin\Debug\Autoservicio.exe.config
 C:\Users\LUIS\Desktop\nube\Autoservicio\obj\Debug\Autoservicio.exe
 C:\Users\LUIS\Desktop\nube\Autoservicio\obj\Debug\Autoservicio.xml
 C:\Users\LUIS\Desktop\nube\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmproducto.resources
