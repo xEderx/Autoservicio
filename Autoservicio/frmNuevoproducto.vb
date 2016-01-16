@@ -36,7 +36,7 @@ Public Class frmNuevoproducto
                 ccbd.conectarbd()
                 conbd.Open()
                 tran = conbd.BeginTransaction
-                sql = "INSERT INTO cat_productos (CodBarra, Producto, Existencia, Cat_TipoProductos_IdTipo, Precio) VALUES ('" & txtNSucursal.Text & "', '" & txtNDireccion.Text & "', " & txtNCP.Text & ", " & cmbEstado.SelectedValue & ", " & cmbMunicipio.SelectedValue & ")"
+                sql = "INSERT INTO cat_productos (CodBarra, Producto, Existencia, Cat_TipoProductos_IdTipo, Precio) VALUES (" & txtCodigo.Text & ", '" & txtnombre.Text & "', " & txtexi.Text & ", " & cmbtipo.SelectedValue & ", " & txtprecio.Text & ")"
                 mycommand = New MySqlCommand(sql)
                 mycommand.Connection = conbd
                 mycommand.Transaction = tran

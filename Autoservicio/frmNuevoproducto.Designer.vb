@@ -24,7 +24,6 @@ Partial Class frmNuevoproducto
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmNuevoproducto))
         Me.btnMGuardar = New System.Windows.Forms.Button()
-        Me.txtprecio = New System.Windows.Forms.TextBox()
         Me.txtexi = New System.Windows.Forms.TextBox()
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
@@ -34,6 +33,7 @@ Partial Class frmNuevoproducto
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmbtipo = New System.Windows.Forms.ComboBox()
+        Me.txtprecio = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnMGuardar
@@ -44,14 +44,6 @@ Partial Class frmNuevoproducto
         Me.btnMGuardar.Size = New System.Drawing.Size(52, 48)
         Me.btnMGuardar.TabIndex = 35
         Me.btnMGuardar.UseVisualStyleBackColor = True
-        '
-        'txtprecio
-        '
-        Me.txtprecio.Location = New System.Drawing.Point(125, 160)
-        Me.txtprecio.Name = "txtprecio"
-        Me.txtprecio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtprecio.Size = New System.Drawing.Size(140, 20)
-        Me.txtprecio.TabIndex = 34
         '
         'txtexi
         '
@@ -127,14 +119,21 @@ Partial Class frmNuevoproducto
         Me.cmbtipo.Size = New System.Drawing.Size(140, 21)
         Me.cmbtipo.TabIndex = 36
         '
+        'txtprecio
+        '
+        Me.txtprecio.Location = New System.Drawing.Point(125, 167)
+        Me.txtprecio.Name = "txtprecio"
+        Me.txtprecio.Size = New System.Drawing.Size(140, 20)
+        Me.txtprecio.TabIndex = 37
+        '
         'frmNuevoproducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.txtprecio)
         Me.Controls.Add(Me.cmbtipo)
         Me.Controls.Add(Me.btnMGuardar)
-        Me.Controls.Add(Me.txtprecio)
         Me.Controls.Add(Me.txtexi)
         Me.Controls.Add(Me.txtnombre)
         Me.Controls.Add(Me.txtCodigo)
@@ -151,7 +150,6 @@ Partial Class frmNuevoproducto
     End Sub
 
     Friend WithEvents btnMGuardar As Button
-    Friend WithEvents txtprecio As TextBox
     Friend WithEvents txtexi As TextBox
     Friend WithEvents txtnombre As TextBox
     Friend WithEvents txtCodigo As TextBox
@@ -161,4 +159,5 @@ Partial Class frmNuevoproducto
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents cmbtipo As ComboBox
+    Friend WithEvents txtprecio As TextBox
 End Class
