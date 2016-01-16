@@ -100,6 +100,12 @@
     <Compile Include="altacliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmmodificaproducto.Designer.vb">
+      <DependentUpon>frmmodificaproducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmodificaproducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNuevoproducto.Designer.vb">
       <DependentUpon>frmNuevoproducto.vb</DependentUpon>
     </Compile>
