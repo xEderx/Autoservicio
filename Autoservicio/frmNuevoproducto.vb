@@ -10,7 +10,7 @@ Public Class frmNuevoproducto
     End Sub
     Public Sub tipo()
         conbd.Open()
-        sql = "SELECT * FROM    "
+        sql = "SELECT * FROM cat_tipoproductos"
         mycommand = New MySqlCommand()
         mycommand.CommandText = sql
         mycommand.CommandType = CommandType.Text

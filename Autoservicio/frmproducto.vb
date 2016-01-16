@@ -53,16 +53,19 @@ Public Class frmproducto
         vid = Convert.ToInt32(dtgproductos.Item("CodBarra", ind).Value)
     End Sub
     Private Sub dtgproductos_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgproductos.CellDoubleClick
-        Dim objModificarproducto As New frmModificarSucursal
+        Dim objModificarproducto As New frmModificaRproducto
         Dim ind As Integer = dtgproductos.CurrentRow.Index
         vid_usuario = Convert.ToInt32(dtgproductos.Item("CodBarra", ind).Value)
-        objModificarproducto.txtMSucursal.Text = Convert.ToString(dtgproductos.Item("Producto", ind).Value)
-        objModificarproducto.txtMDireccion.Text = Convert.ToString(dtgproductos.Item("Existencia", ind).Value)
-        objModificarproducto.txtMCP.Text = Convert.ToInt32(dtgproductos.Item("Existencia", ind).Value)
+        objModificarproducto.txtnombre.Text = Convert.ToString(dtgproductos.Item("Producto", ind).Value)
+        objModificarproducto.txtexi.Text = Convert.ToString(dtgproductos.Item("Existencia", ind).Value)
         vtipo = Convert.ToInt32(dtgproductos.Item("Cat_TipoProductos_IdTipo", ind).Value)
-        objModificarproducto.txtMCP.Text = Convert.ToInt32(dtgproductos.Item("Existencia", ind).Value)
+        objModificarproducto.txtprecio.Text = Convert.ToInt32(dtgproductos.Item("Precio", ind).Value)
 
         objModificarproducto.ShowDialog()
         Call cargadatos()
+    End Sub
+
+    Private Sub dtgproductos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgproductos.CellContentClick
+
     End Sub
 End Class
