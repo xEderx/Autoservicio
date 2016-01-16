@@ -1,10 +1,34 @@
-﻿Public Class Principal
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Principal
     Public Sub Sesion()
         If vsesion = 1 Then
             UsuariToolStripMenuItem.Enabled = True
         Else
             UsuariToolStripMenuItem.Enabled = False
         End If
+    End Sub
+
+    Public Sub AgregarProducto()
+        Dim tran As MySqlTransaction
+        Try
+            ccbd.conectarbd()
+            conbd.Open()
+            tran = conbd.BeginTransaction
+            'sql = "INSERT INTO tbl_sucursal (Sucursal, Domicilio, CP, Cat_Estado_IdEstado, Cat_Ciudades_IdCiudad) VALUES ('" & txtNSucursal.Text & "', '" & txtNDireccion.Text & "', " & txtNCP.Text & ", " & cmbEstado.SelectedValue & ", " & cmbMunicipio.SelectedValue & ")"
+            mycommand = New MySqlCommand(sql)
+            mycommand.Connection = conbd
+            mycommand.Transaction = tran
+            mycommand.ExecuteNonQuery()
+            MessageBox.Show("El usuario fue agregado correctamente.", "Inserción.", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            tran.Commit()
+            conbd.Close()
+            Me.Close()
+        Catch ex As Exception
+            tran.Rollback()
+            conbd.Close()
+            MessageBox.Show("No se pudo agregar el usuario.", "Inserción", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
     Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
         Me.Hide()
@@ -28,6 +52,7 @@
     End Sub
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblFolio.Text = vticket + 1
         Call Sesion()
     End Sub
 
@@ -85,12 +110,12 @@
 
     End Sub
 
-    Private Sub VentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasToolStripMenuItem.Click
+    Private Sub VentasToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub NuevaVentaToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles NuevaVentaToolStripMenuItem.Click
-        frmNuevaventa.Show()
+    Private Sub NuevaVentaToolStripMenuItem_Click_1(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub AltaClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AltaClienteToolStripMenuItem.Click
@@ -101,5 +126,29 @@
 
     Private Sub VentasToolStripMenuItem1_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub InventariosToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAgregarProducto.Click
+        frmAgregarProductos.ShowDialog()
+    End Sub
+
+    Private Sub chkTipocliente_CheckedChanged(sender As Object, e As EventArgs) Handles chkTipocliente.CheckedChanged
+        If chkTipocliente.Checked = True Then
+            cmbNombreCliente.Enabled = False
+        Else
+            cmbNombreCliente.Enabled = True
+        End If
     End Sub
 End Class

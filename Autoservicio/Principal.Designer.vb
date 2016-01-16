@@ -29,25 +29,27 @@ Partial Class Principal
         Me.DatosDeLaEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaldosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AltaClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CatálogosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SucursalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevaVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AltaClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblFolio = New System.Windows.Forms.Label()
+        Me.chkTipocliente = New System.Windows.Forms.CheckBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cmbNombreCliente = New System.Windows.Forms.ComboBox()
+        Me.btnAgregarProducto = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HolaToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.InventariosToolStripMenuItem, Me.UsuariToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HolaToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.UsuariToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(653, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(515, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -86,33 +88,14 @@ Partial Class Principal
         'ListadoToolStripMenuItem
         '
         Me.ListadoToolStripMenuItem.Name = "ListadoToolStripMenuItem"
-        Me.ListadoToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.ListadoToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.ListadoToolStripMenuItem.Text = "Listado"
         '
-        'InventariosToolStripMenuItem
+        'AltaClienteToolStripMenuItem
         '
-        Me.InventariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem, Me.SaldosToolStripMenuItem, Me.VentasToolStripMenuItem, Me.NuevaVentaToolStripMenuItem})
-        Me.InventariosToolStripMenuItem.Name = "InventariosToolStripMenuItem"
-        Me.InventariosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
-        Me.InventariosToolStripMenuItem.Text = "Productos"
-        '
-        'ComprasToolStripMenuItem
-        '
-        Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ComprasToolStripMenuItem.Text = "Compras"
-        '
-        'VentasToolStripMenuItem
-        '
-        Me.VentasToolStripMenuItem.Name = "VentasToolStripMenuItem"
-        Me.VentasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.VentasToolStripMenuItem.Text = "Ventas"
-        '
-        'SaldosToolStripMenuItem
-        '
-        Me.SaldosToolStripMenuItem.Name = "SaldosToolStripMenuItem"
-        Me.SaldosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SaldosToolStripMenuItem.Text = "Saldos"
+        Me.AltaClienteToolStripMenuItem.Name = "AltaClienteToolStripMenuItem"
+        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.AltaClienteToolStripMenuItem.Text = "Alta Cliente"
         '
         'UsuariToolStripMenuItem
         '
@@ -124,14 +107,14 @@ Partial Class Principal
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'CatálogosToolStripMenuItem
         '
         Me.CatálogosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SucursalesToolStripMenuItem})
         Me.CatálogosToolStripMenuItem.Name = "CatálogosToolStripMenuItem"
-        Me.CatálogosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CatálogosToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.CatálogosToolStripMenuItem.Text = "Catálogos"
         '
         'SucursalesToolStripMenuItem
@@ -140,24 +123,84 @@ Partial Class Principal
         Me.SucursalesToolStripMenuItem.Size = New System.Drawing.Size(129, 22)
         Me.SucursalesToolStripMenuItem.Text = "Sucursales"
         '
-        'NuevaVentaToolStripMenuItem
+        'Label1
         '
-        Me.NuevaVentaToolStripMenuItem.Name = "NuevaVentaToolStripMenuItem"
-        Me.NuevaVentaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NuevaVentaToolStripMenuItem.Text = "Nueva venta"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(381, 37)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(77, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Folio de venta:"
         '
-        'AltaClienteToolStripMenuItem
+        'lblFolio
         '
-        Me.AltaClienteToolStripMenuItem.Name = "AltaClienteToolStripMenuItem"
-        Me.AltaClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AltaClienteToolStripMenuItem.Text = "Alta Cliente"
+        Me.lblFolio.AutoSize = True
+        Me.lblFolio.ForeColor = System.Drawing.Color.Red
+        Me.lblFolio.Location = New System.Drawing.Point(464, 37)
+        Me.lblFolio.Name = "lblFolio"
+        Me.lblFolio.Size = New System.Drawing.Size(24, 13)
+        Me.lblFolio.TabIndex = 3
+        Me.lblFolio.Text = "No."
+        '
+        'chkTipocliente
+        '
+        Me.chkTipocliente.AutoSize = True
+        Me.chkTipocliente.Location = New System.Drawing.Point(101, 33)
+        Me.chkTipocliente.Name = "chkTipocliente"
+        Me.chkTipocliente.Size = New System.Drawing.Size(99, 17)
+        Me.chkTipocliente.TabIndex = 4
+        Me.chkTipocliente.Text = "Público general"
+        Me.chkTipocliente.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 34)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(80, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Tipo de cliente:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 68)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(98, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Nombre del cliente:"
+        '
+        'cmbNombreCliente
+        '
+        Me.cmbNombreCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbNombreCliente.FormattingEnabled = True
+        Me.cmbNombreCliente.Location = New System.Drawing.Point(116, 65)
+        Me.cmbNombreCliente.Name = "cmbNombreCliente"
+        Me.cmbNombreCliente.Size = New System.Drawing.Size(264, 21)
+        Me.cmbNombreCliente.TabIndex = 7
+        '
+        'btnAgregarProducto
+        '
+        Me.btnAgregarProducto.Location = New System.Drawing.Point(400, 62)
+        Me.btnAgregarProducto.Name = "btnAgregarProducto"
+        Me.btnAgregarProducto.Size = New System.Drawing.Size(75, 39)
+        Me.btnAgregarProducto.TabIndex = 8
+        Me.btnAgregarProducto.Text = "Agregar productos"
+        Me.btnAgregarProducto.UseVisualStyleBackColor = True
         '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(653, 410)
+        Me.ClientSize = New System.Drawing.Size(515, 113)
+        Me.Controls.Add(Me.btnAgregarProducto)
+        Me.Controls.Add(Me.cmbNombreCliente)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.chkTipocliente)
+        Me.Controls.Add(Me.lblFolio)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Principal"
         Me.Text = "Autoservicio"
@@ -174,15 +217,17 @@ Partial Class Principal
     Friend WithEvents SalirDeProgramaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClientesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents InventariosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ComprasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents VentasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SaldosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DatosDeLaEmpresaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CatálogosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SucursalesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevaVentaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AltaClienteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblFolio As Label
+    Friend WithEvents chkTipocliente As CheckBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents cmbNombreCliente As ComboBox
+    Friend WithEvents btnAgregarProducto As Button
 End Class

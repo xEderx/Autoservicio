@@ -6,7 +6,6 @@ Public Class Form1
             MessageBox.Show("¡Tiene que poner un usuario y/o contraseña!", "Campos vacíos.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
             ccbd.conectarbd()
-
             conbd.Open()
             sql = "SELECT * FROM cat_usuarios WHERE Usuario = '" & txtUsuario.Text & "' AND Contrasenia = '" & txtContrasenia.Text & "'"
             mycommand = New MySqlCommand(sql)
@@ -29,6 +28,18 @@ Public Class Form1
             End If
         End If
     End Sub
+
+    Public Sub Ticket()
+        ccbd.conectarbd()
+        conbd.Open()
+        sql = "SELECT * FROM tbl_ventas"
+        mycommand = New MySqlCommand(sql)
+        mycommand.Connection = conbd
+        Dim mydata As MySqlDataReader
+        mydata = mycommand.ExecuteReader()
+        mydata.Read()
+        vticket = mydata(0)
+    End Sub
     Private Sub btnAcceder_Click(sender As Object, e As EventArgs) Handles btnAcceder.Click
         Call Acceso()
     End Sub
@@ -41,6 +52,7 @@ Public Class Form1
     Private Sub txtContrasenia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtContrasenia.KeyPress
         If e.KeyChar = ChrW(Keys.Enter) Then
             Call Acceso()
+            Call Ticket()
         End If
     End Sub
 
