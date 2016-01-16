@@ -79,6 +79,7 @@ Partial Class frmSucursales
         '
         'dtgSucursales
         '
+        Me.dtgSucursales.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.dtgSucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtgSucursales.Location = New System.Drawing.Point(13, 102)
         Me.dtgSucursales.Name = "dtgSucursales"

@@ -27,10 +27,10 @@ Partial Class frmproducto
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
-        Me.dtgUsuarios = New System.Windows.Forms.DataGridView()
+        Me.dtgproductos = New System.Windows.Forms.DataGridView()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.dtgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgproductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnBuscar
@@ -69,14 +69,14 @@ Partial Class frmproducto
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
-        'dtgUsuarios
+        'dtgproductos
         '
-        Me.dtgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgUsuarios.Location = New System.Drawing.Point(16, 109)
-        Me.dtgUsuarios.Name = "dtgUsuarios"
-        Me.dtgUsuarios.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.dtgUsuarios.Size = New System.Drawing.Size(517, 123)
-        Me.dtgUsuarios.TabIndex = 12
+        Me.dtgproductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgproductos.Location = New System.Drawing.Point(16, 109)
+        Me.dtgproductos.Name = "dtgproductos"
+        Me.dtgproductos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.dtgproductos.Size = New System.Drawing.Size(517, 123)
+        Me.dtgproductos.TabIndex = 12
         '
         'txtBuscar
         '
@@ -106,12 +106,12 @@ Partial Class frmproducto
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnNuevo)
-        Me.Controls.Add(Me.dtgUsuarios)
+        Me.Controls.Add(Me.dtgproductos)
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmproducto"
         Me.Text = "Form2"
-        CType(Me.dtgUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgproductos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -121,7 +121,7 @@ Partial Class frmproducto
     Friend WithEvents Button1 As Button
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnNuevo As Button
-    Friend WithEvents dtgUsuarios As DataGridView
+    Friend WithEvents dtgproductos As DataGridView
     Friend WithEvents txtBuscar As TextBox
     Friend WithEvents Label1 As Label
 End Class

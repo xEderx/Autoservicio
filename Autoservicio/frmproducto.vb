@@ -11,14 +11,14 @@ Public Class frmproducto
             sql = "SELECT * FROM cat_productos"
             daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
             daMySQL.Fill(dt)
-            Me.dtgUsuarios.DataSource = dt
-            dtgUsuarios.ReadOnly = True
-            dtgUsuarios.AutoResizeColumns()
-            dtgUsuarios.Columns(0).HeaderText = "Codigo"
-            dtgUsuarios.Columns(1).HeaderText = "Producto"
-            dtgUsuarios.Columns(2).HeaderText = "Existencia"
-            dtgUsuarios.Columns(3).HeaderText = "Tipo"
-            dtgUsuarios.Columns(4).HeaderText = "Precio"
+            Me.dtgproductos.DataSource = dt
+            dtgproductos.ReadOnly = True
+            dtgproductos.AutoResizeColumns()
+            dtgproductos.Columns(0).HeaderText = "Codigo"
+            dtgproductos.Columns(1).HeaderText = "Producto"
+            dtgproductos.Columns(2).HeaderText = "Existencia"
+            dtgproductos.Columns(3).HeaderText = "Tipo"
+            dtgproductos.Columns(4).HeaderText = "Precio"
 
         Catch ex As Exception
             MessageBox.Show("No se pudieron obtener los registros de la base de datos.", "Error de datos.", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -38,7 +38,7 @@ Public Class frmproducto
             sql = "select * from cat_productos where Producto like '" & "%" & txtBuscar.Text & "%'"
             daMySQL.SelectCommand = New MySqlCommand(sql, conbd)
             daMySQL.Fill(dt)
-            Me.dtgUsuarios.DataSource = dt
+            Me.dtgproductos.DataSource = dt
         Catch ex As Exception
             MessageBox.Show("Error al obtener los registros.", "Error de datos.", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -46,6 +46,23 @@ Public Class frmproducto
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         frmNuevoproducto.ShowDialog()
+        Call cargadatos()
+    End Sub
+    Private Sub dtgproductos_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgproductos.CellClick
+        Dim ind As Integer = dtgproductos.CurrentRow.Index
+        vid = Convert.ToInt32(dtgproductos.Item("CodBarra", ind).Value)
+    End Sub
+    Private Sub dtgproductos_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgproductos.CellDoubleClick
+        Dim objModificarproducto As New frmModificarSucursal
+        Dim ind As Integer = dtgproductos.CurrentRow.Index
+        vid_usuario = Convert.ToInt32(dtgproductos.Item("CodBarra", ind).Value)
+        objModificarproducto.txtMSucursal.Text = Convert.ToString(dtgproductos.Item("Producto", ind).Value)
+        objModificarproducto.txtMDireccion.Text = Convert.ToString(dtgproductos.Item("Existencia", ind).Value)
+        objModificarproducto.txtMCP.Text = Convert.ToInt32(dtgproductos.Item("Existencia", ind).Value)
+        vtipo = Convert.ToInt32(dtgproductos.Item("Cat_TipoProductos_IdTipo", ind).Value)
+        objModificarproducto.txtMCP.Text = Convert.ToInt32(dtgproductos.Item("Existencia", ind).Value)
+
+        objModificarproducto.ShowDialog()
         Call cargadatos()
     End Sub
 End Class
