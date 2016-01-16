@@ -100,6 +100,12 @@
     <Compile Include="altacliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmVenta.Designer.vb">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNuevaventa.Designer.vb">
       <DependentUpon>frmNuevaventa.vb</DependentUpon>
     </Compile>
@@ -140,10 +146,6 @@
       <DependentUpon>frmUsuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="frmUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmVentas.Designer.vb" />
-    <Compile Include="frmVentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Principal.Designer.vb">
@@ -203,7 +205,9 @@
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmVentas.resx" />
+    <EmbeddedResource Include="frmVenta.resx">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

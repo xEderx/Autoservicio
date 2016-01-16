@@ -82,3 +82,27 @@ C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\D
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.exe
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.xml
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\bin\Debug\Autoservicio.exe.config
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.exe
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.xml
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.pdb
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\bin\Debug\Autoservicio.exe
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\bin\Debug\Autoservicio.pdb
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\bin\Debug\Autoservicio.xml
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\bin\Debug\MySql.Data.dll
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.vbprojResolveAssemblyReference.cache
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.altacliente.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.Clientes.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.datosempresa.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.Form1.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmModificarSucursal.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmModificaUsuario.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmNuevaSucursal.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmNuevoUsuario.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmSucursales.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmUsuarios.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.Resources.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.Principal.resources
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.vbproj.GenerateResource.Cache
+C:\Users\LUIS\Desktop\proyecto - copia (3)\Autoservicio\obj\Debug\Autoservicio.frmVenta.resources
