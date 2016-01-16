@@ -36,7 +36,7 @@ Partial Class frmproducto
         'btnBuscar
         '
         Me.btnBuscar.BackgroundImage = CType(resources.GetObject("btnBuscar.BackgroundImage"), System.Drawing.Image)
-        Me.btnBuscar.Location = New System.Drawing.Point(436, 20)
+        Me.btnBuscar.Location = New System.Drawing.Point(458, 12)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 83)
         Me.btnBuscar.TabIndex = 16
