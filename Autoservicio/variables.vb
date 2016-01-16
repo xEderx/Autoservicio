@@ -12,6 +12,9 @@ Module variables
     Public vactivo_usuario As Boolean
     Public vestado As Integer
     Public vmunicipio As Integer
+    Public vtipo As Integer
+
+
     Public vticket As Integer
     Public vsucursal As Integer
     Public cmdtbl As New OleDbCommand

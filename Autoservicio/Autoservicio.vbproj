@@ -211,6 +211,9 @@
     <EmbeddedResource Include="frmNuevaventa.resx">
       <DependentUpon>frmNuevaventa.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoproducto.resx">
+      <DependentUpon>frmNuevoproducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoUsuario.resx">
       <DependentUpon>frmNuevoUsuario.vb</DependentUpon>
     </EmbeddedResource>
