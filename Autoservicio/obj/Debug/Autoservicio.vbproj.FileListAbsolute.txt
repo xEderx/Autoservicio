@@ -58,7 +58,6 @@ C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmModificarS
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
 C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmNuevaventa.resources
 C:\Users\LUIS\Desktop\proyecto\Autoservicio\obj\Debug\Autoservicio.frmVentas.resources
-C:\Users\Eder\Source\Repos\Autoservicio\Autoservicio\obj\Debug\Autoservicio.frmVentas.resources
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\Autoservicio.exe.config
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\Autoservicio.exe
 C:\Users\Eder\Documents\Visual Studio 2015\Projects\proyecto1\Autoservicio\bin\Debug\Autoservicio.pdb
