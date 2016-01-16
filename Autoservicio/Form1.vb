@@ -40,11 +40,30 @@ Public Class Form1
         mydata.Read()
         vticket = mydata(0)
     End Sub
+
+    Public Sub Sucursal()
+        ccbd.conectarbd()
+        conbd.Open()
+        sql = "SELECT * FROM tbl_sucursal"
+        mycommand = New MySqlCommand()
+        mycommand.CommandText = sql
+        mycommand.CommandType = CommandType.Text
+        mycommand.Connection = conbd
+        daMySQL = New MySqlDataAdapter(mycommand)
+        ds = New DataSet()
+        daMySQL.Fill(ds)
+        cmbSucursal.DataSource = ds.Tables(0)
+        cmbSucursal.DisplayMember = "Sucursal"
+        cmbSucursal.ValueMember = "IdSucursal"
+        conbd.Close()
+    End Sub
     Private Sub btnAcceder_Click(sender As Object, e As EventArgs) Handles btnAcceder.Click
+        vsucursal = cmbSucursal.SelectedValue
         Call Acceso()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call Sucursal()
         txtUsuario.Text = "EMoreno"
         txtContrasenia.Text = "123456"
     End Sub

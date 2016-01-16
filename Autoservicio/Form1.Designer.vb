@@ -28,6 +28,8 @@ Partial Class Form1
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.txtContrasenia = New System.Windows.Forms.TextBox()
         Me.btnAcceder = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cmbSucursal = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -68,18 +70,39 @@ Partial Class Form1
         'btnAcceder
         '
         Me.btnAcceder.BackgroundImage = CType(resources.GetObject("btnAcceder.BackgroundImage"), System.Drawing.Image)
-        Me.btnAcceder.Location = New System.Drawing.Point(105, 142)
+        Me.btnAcceder.Location = New System.Drawing.Point(99, 216)
         Me.btnAcceder.Name = "btnAcceder"
         Me.btnAcceder.Size = New System.Drawing.Size(75, 46)
         Me.btnAcceder.TabIndex = 4
         Me.btnAcceder.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Yu Gothic UI", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(94, 147)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(87, 25)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Sucursal:"
+        '
+        'cmbSucursal
+        '
+        Me.cmbSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSucursal.FormattingEnabled = True
+        Me.cmbSucursal.Location = New System.Drawing.Point(40, 175)
+        Me.cmbSucursal.Name = "cmbSucursal"
+        Me.cmbSucursal.Size = New System.Drawing.Size(209, 21)
+        Me.cmbSucursal.TabIndex = 6
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(281, 201)
+        Me.ClientSize = New System.Drawing.Size(281, 275)
+        Me.Controls.Add(Me.cmbSucursal)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnAcceder)
         Me.Controls.Add(Me.txtContrasenia)
         Me.Controls.Add(Me.txtUsuario)
@@ -100,4 +123,6 @@ Partial Class Form1
     Friend WithEvents txtUsuario As TextBox
     Friend WithEvents txtContrasenia As TextBox
     Friend WithEvents btnAcceder As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents cmbSucursal As ComboBox
 End Class
